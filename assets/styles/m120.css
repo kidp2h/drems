@@ -1,0 +1,117 @@
+.container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 36px;
+  padding-top: calc(110px + 65px);
+}
+.table-row td {
+  height: 80px;
+  vertical-align: middle;
+  border: 1px solid;
+}
+.row__field {
+  width: 515px;
+  padding-left: 43px !important;
+  font-size: 24px;
+  background-color: #eeeeee !important;
+  border-right: 3px solid !important;
+}
+.row__field--data {
+  width: 825px;
+  padding-left: 17px !important;
+  font-size: 32px;
+  border-right: 3px solid !important;
+}
+.row__field--data.hasInput {
+  padding-left: 5px !important;
+}
+.row__field--status {
+  width: 587px;
+  font-size: 24px;
+  padding-left: 49px !important;
+  background-color: #eeeeee !important;
+}
+.btn-edit {
+  background-color: #6dc4ff !important;
+}
+
+/* m130 */
+.wrap__field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field__require {
+  margin-right: 5px;
+  font-size: 24px;
+  background-color: #d23a65;
+  color: white;
+  width: 71px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.field__input {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 32px;
+  color: black;
+}
+.field__input:focus {
+  outline: none;
+}
+.field__input:active {
+  border: 1px solid;
+}
+.input__onLeave {
+  height: 100%;
+  width: 340px;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 6px;
+  text-align: right;
+}
+.input__onLeave.disable {
+  border: none;
+}
+.input__onLeave.disable:focus {
+  border: none;
+  outline: none;
+}
+.input__onLeave[disabled] {
+  color: black;
+  background-color: white;
+}
+.wrap__field--data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrap__field--data .btn {
+  margin-left: 18px;
+  width: 150px;
+  height: 59px;
+  font-size: 32px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wrap__field--data .field__input {
+  width: 636px;
+}
+
+.wrapRadio {
+  display: inline;
+}
+.wrapRadio:first-child {
+  margin-right: 50px;
+}
