@@ -1,10 +1,10 @@
-.container-fluid {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  padding: 36px;
-  padding-top: calc(110px + 65px);
+.container-fluid,
+.container {
+  padding-top: calc(80px + 70px);
+  align-items: center;
+}
+table.table.table-bordered {
+  width: 95%;
 }
 .table-row td {
   height: 80px;
@@ -21,11 +21,15 @@
 .row__field--data {
   width: 825px;
   padding-left: 17px !important;
-  font-size: 32px;
+  font-size: 24px;
   border-right: 3px solid !important;
 }
 .row__field--data.hasInput {
   padding-left: 5px !important;
+}
+.row__field--data.txtArea {
+  text-align: center;
+  margin: 0 auto;
 }
 .row__field--status {
   width: 587px;
@@ -41,6 +45,7 @@
 .wrap__field {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .field__require {
@@ -57,11 +62,10 @@
 }
 .field__input {
   width: 100%;
-  height: 100%;
   padding: 12px;
   border: 1px solid;
   border-radius: 6px;
-  font-size: 32px;
+  font-size: 24px;
   color: black;
 }
 .field__input:focus {
@@ -72,7 +76,6 @@
 }
 .input__onLeave {
   height: 100%;
-  width: 340px;
   padding: 12px;
   border: 1px solid;
   border-radius: 6px;
@@ -97,16 +100,13 @@
 .wrap__field--data .btn {
   margin-left: 18px;
   width: 150px;
-  height: 59px;
-  font-size: 32px;
+  height: 56px;
+  font-size: 24px;
   color: #444444;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.wrap__field--data .field__input {
-  width: 636px;
 }
 
 .wrapRadio {
@@ -114,4 +114,19 @@
 }
 .wrapRadio:first-child {
   margin-right: 50px;
+}
+.table-row .row__field:first-child {
+  font-size: 20px;
+}
+.row__field--status {
+  font-size: 20px;
+}
+img.iconInput {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, 50%);
+}
+.wrapInputHasIcon {
+  position: relative;
 }

@@ -1,12 +1,14 @@
-.container-fluid {
+.container-fluid,
+.container {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   padding: 36px;
-  padding-top: calc(110px + 15px);
+  padding-top: calc(80px + 15px);
 }
-
+select.form-select {
+  background-image: url("../images/icon_select.svg") !important;
+}
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
