@@ -3,7 +3,7 @@
   width: 248px;
   border: 1px solid;
   border-radius: 6px;
-  font-size: 32px;
+  font-size: 20px;
   text-align: center;
   color: black;
 }
@@ -34,7 +34,7 @@
 thead .col__table {
   background-color: #0075c1;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 23px;
   font-weight: 400;
   text-align: center;
@@ -52,14 +52,14 @@ tr td {
 }
 .row__data {
   text-align: center;
-  font-size: 32px;
+  font-size: 17px;
   line-height: 38px;
   vertical-align: middle;
 }
 .row__table {
   height: 110px;
 }
-.col__table th:last-child {
+.row__tabl .col__table th:last-child {
   width: 200px;
 }
 .row__table:nth-child(odd) {
@@ -70,7 +70,7 @@ tr td {
   background-color: white !important;
 }
 .row__table:hover {
-  background-color: rgb(161, 161, 161) !important;
+  background-color: #ccecff !important;
 }
 .btn-delete {
   background-color: #ff9999;
@@ -126,7 +126,7 @@ tr td {
   background-color: rgb(161, 161, 161) !important;
 }
 .page-item .page-link {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 37.5px;
   height: 70px;
   width: 70px;
