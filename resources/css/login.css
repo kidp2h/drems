@@ -8,6 +8,10 @@ body {
 .background__image .bg__image {
   position: absolute;
 }
+#logoLogin {
+  width: 200px;
+  height: 200px;
+}
 .wrap {
   position: absolute;
   left: 154px;
@@ -16,13 +20,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-#logoLogin {
-  /* position: absolute; */
-  /* width: 254px;
-  height: 246px;
-  left: 154px;
-  top: 434px; */
-}
 #wrapTextLogo {
   display: flex;
   flex-direction: column;
@@ -30,10 +27,10 @@ body {
   margin-left: 21px;
 }
 #nameBrand {
-  font-size: 96px;
+  font-size: 76px;
 }
 #nameSystem {
-  font-size: 40px;
+  font-size: 35px;
 }
 #formLogin {
   position: absolute;
