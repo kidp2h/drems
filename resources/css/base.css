@@ -19,11 +19,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-
-td {
-  cursor: pointer;
+a {
+  text-decoration: none;
+  color: white;
 }
 td {
+  cursor: pointer;
   color: black;
 }
 span {
@@ -55,4 +56,89 @@ input::-webkit-inner-spin-button {
 }
 ol {
   list-style-type: none;
+}
+
+#table__data {
+  margin-top: 10px;
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+thead .col__table {
+  background-color: #0075c1;
+  color: white;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+.header__table {
+  height: 42px;
+}
+tr td {
+  font-style: normal;
+  font-weight: 400;
+
+  align-items: center;
+  flex-direction: row;
+  color: black;
+}
+.row__data {
+  text-align: center;
+  font-size: 17px;
+  line-height: 38px;
+  vertical-align: middle;
+}
+.row__table {
+  height: 110px;
+}
+.row__tabl .col__table th:last-child {
+  width: 200px;
+}
+.row__table:nth-child(odd) {
+  background-color: #eeeeee !important;
+}
+
+.row__table:nth-child(even) {
+  background-color: white !important;
+}
+.row__table:hover {
+  background-color: #ccecff !important;
+}
+.btn-delete {
+  background-color: #ff9999;
+}
+.btn-delete:hover {
+  background-color: #f14d4d;
+}
+.btn-view {
+  background-color: #6dc4ff;
+}
+.btn-view:hover {
+  background-color: #0099ff;
+}
+.btn__table:hover {
+  color: black;
+}
+
+.btn__table {
+  width: 70px;
+  height: 53.15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row__action .btn__table:first-child {
+  margin-right: 20px;
+}
+.row__action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110px;
 }

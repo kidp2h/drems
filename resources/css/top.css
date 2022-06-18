@@ -73,7 +73,7 @@ ul.dropdown.dropdown__profile::before {
 ul.dropdown.dropdown__profile::after {
   content: " ";
   width: 100%;
-  height: 100px;
+  height: 70px;
   position: absolute;
   top: -55px;
   background-color: transparent;
@@ -142,6 +142,9 @@ ul.dropdown.dropdown__profile::after {
 }
 .title__card span {
   font-size: 24px;
+}
+.title__card span a {
+  color: white;
 }
 .card-page.card__primary {
   background-color: var(--primary);

@@ -1,0 +1,13 @@
+td.row__data.row__action {
+  display: flex;
+  justify-content: flex-end;
+}
+td.row__data {
+  font-size: 26px;
+}
+.col__table th:last-child {
+  width: 600px;
+}
+.row__action .btn__table:first-child {
+  margin-right: 20px;
+}
