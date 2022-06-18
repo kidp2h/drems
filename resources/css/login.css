@@ -28,9 +28,11 @@ body {
 }
 #nameBrand {
   font-size: 76px;
+  color: #0075c1;
 }
 #nameSystem {
   font-size: 35px;
+  color: #0075c1;
 }
 #formLogin {
   position: absolute;
@@ -106,4 +108,5 @@ footer span {
   margin-left: 35px;
   margin-top: 20px;
   position: absolute;
+  color: white;
 }
