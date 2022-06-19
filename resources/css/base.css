@@ -57,14 +57,14 @@ input::-webkit-inner-spin-button {
 ol {
   list-style-type: none;
 }
-
-#table__data {
+/* Table Vertical */
+#table__data.table-field-vertical {
   margin-top: 10px;
   border-radius: 6px 6px 0px 0px;
   overflow: hidden;
   margin-top: 25px;
 }
-thead .col__table {
+.table-field-vertical .header__table .col__table {
   background-color: #0075c1;
   color: white;
   font-size: 17px;
@@ -72,10 +72,10 @@ thead .col__table {
   font-weight: 400;
   text-align: center;
 }
-.header__table {
+.table-field-vertical .header__table {
   height: 42px;
 }
-tr td {
+.table-field-vertical tr td {
   font-style: normal;
   font-weight: 400;
 
@@ -83,26 +83,26 @@ tr td {
   flex-direction: row;
   color: black;
 }
-.row__data {
+.table-field-vertical .row__data {
   text-align: center;
   font-size: 17px;
   line-height: 38px;
   vertical-align: middle;
 }
-.row__table {
+.table-field-vertical .row__table {
   height: 110px;
 }
-.row__tabl .col__table th:last-child {
+.table-field-vertical .row__tabl .col__table th:last-child {
   width: 200px;
 }
-.row__table:nth-child(odd) {
+.table-field-vertical .row__table:nth-child(odd) {
   background-color: #eeeeee !important;
 }
 
-.row__table:nth-child(even) {
+.table-field-vertical .row__table:nth-child(even) {
   background-color: white !important;
 }
-.row__table:hover {
+.table-field-vertical .row__table:hover {
   background-color: #ccecff !important;
 }
 .btn-delete {
@@ -117,11 +117,11 @@ tr td {
 .btn-view:hover {
   background-color: #0099ff;
 }
-.btn__table:hover {
+.table-field-vertical .btn__table:hover {
   color: black;
 }
 
-.btn__table {
+.table-field-vertical .btn__table {
   width: 70px;
   height: 53.15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -131,14 +131,125 @@ tr td {
   align-items: center;
   justify-content: center;
 }
-.row__action .btn__table:first-child {
+.table-field-vertical .row__action .btn__table:first-child {
   margin-right: 20px;
 }
-.row__action {
+.table-field-vertical .row__action {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 110px;
+}
+
+/* Table Horizontal */
+.table-field-horizontal.table.table-bordered {
+  width: 95%;
+}
+.table-field-horizontal .table-row td {
+  height: 80px;
+  vertical-align: middle;
+  border: 1px solid;
+}
+.table-field-horizontal .row__field {
+  width: 515px;
+  padding-left: 43px !important;
+  font-size: 24px;
+  background-color: #eeeeee !important;
+  border-right: 3px solid !important;
+}
+.table-field-horizontal .row__field--data {
+  width: 825px;
+  padding-left: 17px !important;
+  font-size: 24px;
+  border-right: 3px solid !important;
+}
+.table-field-horizontal .row__field--data.hasInput {
+  padding-left: 5px !important;
+}
+.table-field-horizontal .row__field--data.txtArea {
+  text-align: center;
+  margin: 0 auto;
+}
+.table-field-horizontal .row__field--status {
+  width: 587px;
+  font-size: 24px;
+  padding-left: 49px !important;
+  background-color: #eeeeee !important;
+}
+.table-field-horizontal .wrap__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-field-horizontal .field__require {
+  margin-right: 5px;
+  font-size: 24px;
+  background-color: #d23a65;
+  color: white;
+  width: 71px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.table-field-horizontal .field__input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 24px;
+  color: black;
+}
+.table-field-horizontal .field__input:focus {
+  outline: none;
+}
+.table-field-horizontal .field__input:active {
+  border: 1px solid;
+}
+
+.table-field-horizontal .wrap__field--data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.table-field-horizontal .wrap__field--data .btn {
+  margin-left: 18px;
+  width: 150px;
+  height: 56px;
+  font-size: 24px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.table-field-horizontal .wrapRadio {
+  display: inline;
+}
+.table-field-horizontal .wrapRadio:first-child {
+  margin-right: 50px;
+}
+.table-field-horizontal .form-check-label {
+  margin-left: 10px;
+}
+.table-field-horizontal .table-row .row__field:first-child {
+  font-size: 20px;
+}
+.table-field-horizontal .row__field--status {
+  font-size: 20px;
+}
+
+img.iconInput {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, 50%);
+}
+.wrapInputHasIcon {
+  position: relative;
 }

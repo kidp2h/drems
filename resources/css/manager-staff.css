@@ -3,77 +3,11 @@
   padding-top: calc(80px + 70px);
   align-items: center;
 }
-table.table.table-bordered {
-  width: 95%;
-}
-.table-row td {
-  height: 80px;
-  vertical-align: middle;
-  border: 1px solid;
-}
-.row__field {
-  width: 515px;
-  padding-left: 43px !important;
-  font-size: 24px;
-  background-color: #eeeeee !important;
-  border-right: 3px solid !important;
-}
-.row__field--data {
-  width: 825px;
-  padding-left: 17px !important;
-  font-size: 24px;
-  border-right: 3px solid !important;
-}
-.row__field--data.hasInput {
-  padding-left: 5px !important;
-}
-.row__field--data.txtArea {
-  text-align: center;
-  margin: 0 auto;
-}
-.row__field--status {
-  width: 587px;
-  font-size: 24px;
-  padding-left: 49px !important;
-  background-color: #eeeeee !important;
-}
+
 .btn-edit {
   background-color: #6dc4ff !important;
 }
 
-/* edit-staff */
-.wrap__field {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.field__require {
-  margin-right: 5px;
-  font-size: 24px;
-  background-color: #d23a65;
-  color: white;
-  width: 71px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-}
-.field__input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid;
-  border-radius: 6px;
-  font-size: 24px;
-  color: black;
-}
-.field__input:focus {
-  outline: none;
-}
-.field__input:active {
-  border: 1px solid;
-}
 .input__onLeave {
   height: 100%;
   padding: 12px;
@@ -91,42 +25,4 @@ table.table.table-bordered {
 .input__onLeave[disabled] {
   color: black;
   background-color: white;
-}
-.wrap__field--data {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.wrap__field--data .btn {
-  margin-left: 18px;
-  width: 150px;
-  height: 56px;
-  font-size: 24px;
-  color: #444444;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.wrapRadio {
-  display: inline;
-}
-.wrapRadio:first-child {
-  margin-right: 50px;
-}
-.table-row .row__field:first-child {
-  font-size: 20px;
-}
-.row__field--status {
-  font-size: 20px;
-}
-img.iconInput {
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: translate(-50%, 50%);
-}
-.wrapInputHasIcon {
-  position: relative;
 }

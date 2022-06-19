@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
@@ -27,6 +31,7 @@
     ></script>
     <link rel="stylesheet" href="./resources/css/base.css" />
     <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/setting.css" />
   </head>
   <body>
     <nav id="navbar">
@@ -44,5 +49,207 @@
         <a href="./top.html" class="btn btn-return">戻る</a>
       </div>
     </nav>
+    <div class="container">
+      <span class="nameTable">お知らせ</span>
+      <table class="table table-bordered table-field-horizontal">
+        <tbody>
+          <tr class="table-row">
+            <td class="row__field">掲載開始日</td>
+            <td
+              class="row__field--data hasInput hasDateTimePicker"
+              id="datetimepicker1"
+            >
+              <div class="wrapInputHasIcon">
+                <input
+                  type="text"
+                  data-input
+                  class="field__input"
+                  data-target="#datetimepicker1"
+                  style="background: white"
+                />
+                <img
+                  class="iconInput"
+                  src="./resources/images/icon_datepicker.svg"
+                  alt=""
+                  data-target="#datetimepicker1"
+                  data-toggle="datetimepicker"
+                  srcset=""
+                />
+              </div>
+            </td>
+            <td class="row__field--status"></td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">掲載開始時刻</td>
+            <td class="row__field--data hasInput hasTimePicker">
+              <input type="time" value="99999" class="field__input" />
+            </td>
+            <td class="row__field--status"></td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">掲載終了日</td>
+            <td
+              class="row__field--data hasInput hasDateTimePicker"
+              id="datetimepicker1"
+            >
+              <div class="wrapInputHasIcon">
+                <input
+                  type="text"
+                  data-input
+                  class="field__input"
+                  data-target="#datetimepicker1"
+                  style="background: white"
+                />
+                <img
+                  class="iconInput"
+                  src="./resources/images/icon_datepicker.svg"
+                  alt=""
+                  data-target="#datetimepicker1"
+                  data-toggle="datetimepicker"
+                  srcset=""
+                />
+              </div>
+            </td>
+            <td class="row__field--status"></td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">掲載終了時刻</td>
+            <td class="row__field--data hasInput hasTimePicker">
+              <input type="time" value="99999" class="field__input" />
+            </td>
+            <td class="row__field--status"></td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">掲載内容</td>
+            <td class="row__field--data field-multiline">
+              <div>【DREMSメンテナンスのお知らせ】</div>
+              <div>以下日程でシステムメンテナンスを行います。</div>
+              <div>期間中はシステムを利用できません。</div>
+              <div>日時：2022年2月22日(火)　20:00～22:00</div>
+              <div>問合せ先：◯◯課　◯◯</div>
+            </td>
+            <td class="row__field--status"></td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">掲載画像</td>
+            <td class="row__field--data field-radioImage">
+              <div class="wrapRadio radioHasImage">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioTypeUsage"
+                    id="radioTypeUsage"
+                  />
+                  <label class="form-check-label" for="radioTypeUsage">
+                    指さしOK
+                  </label>
+                </div>
+                <div class="wrapImageRadio">
+                  <img
+                    class="imageRadio"
+                    src="./resources/images/ok.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="wrapRadio radioHasImage">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioTypeUsage"
+                    id="radioTypeUsage"
+                  />
+                  <label class="form-check-label" for="radioTypeUsage">
+                    よろしくお願いします
+                  </label>
+                </div>
+                <div class="wrapImageRadio">
+                  <img
+                    class="imageRadio"
+                    src="./resources/images/ok.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="wrapRadio radioHasImage">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioTypeUsage"
+                    id="radioTypeUsage"
+                  />
+                  <label class="form-check-label" for="radioTypeUsage">
+                    指さしOK
+                  </label>
+                </div>
+                <div class="wrapImageRadio">
+                  <img
+                    class="imageRadio"
+                    src="./resources/images/ok.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="wrapRadio radioHasImage">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioTypeUsage"
+                    id="radioTypeUsage"
+                  />
+                  <label class="form-check-label" for="radioTypeUsage">
+                    よろしくお願いします
+                  </label>
+                </div>
+                <div class="wrapImageRadio"></div>
+              </div>
+            </td>
+            <td class="row__field--status">
+              画像を変更する場合は、システム管理者にお問合せ下さい。
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">掲載区分</td>
+            <td class="row__field--data">
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioTypeUsage"
+                  id="radioTypeUsage"
+                />
+                <label class="form-check-label" for="radioTypeUsage">
+                  使用する
+                </label>
+              </div>
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioTypeUsage"
+                  id="radioTypeUsage1"
+                />
+                <label class="form-check-label" for="radioTypeUsage1">
+                  使用しない
+                </label>
+              </div>
+            </td>
+            <td class="row__field--status">掲載期間より優先します</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">最終更新</td>
+            <td class="row__field--data">2022/05/01 12:34 大阪　鋼太郎</td>
+            <td class="row__field--status"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
+    <script src="./resources/js/main.js"></script>
   </body>
 </html>
