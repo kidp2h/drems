@@ -68,3 +68,12 @@
 .table-field-horizontal .table-row.hasImage td {
   height: 100%;
 }
+input.numInput.flatpickr-hour {
+  font-size: 24px;
+}
+input.numInput.flatpickr-minute {
+  font-size: 24px;
+}
+.flatpickr-time-separator {
+  font-size: 32px;
+}
