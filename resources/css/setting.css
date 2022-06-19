@@ -1,0 +1,68 @@
+.nameTable {
+  font-size: 20px;
+  padding: 15px;
+  border-left: 10px solid var(--primary);
+  height: 42px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.table-field-horizontal .row__field {
+  width: 350px;
+}
+.table-field-horizontal .row__field--status {
+  width: 400px;
+  padding-left: 20px !important;
+}
+.table-field-horizontal .row__field--data {
+  word-wrap: break-word;
+}
+.table-field-horizontal
+  .row__field--data.field-multiline
+  div:not(:first-child) {
+  margin-left: 25px !important;
+}
+.table-field-horizontal .hasDateTimePicker .field__input {
+  width: 100%;
+}
+.table-field-horizontal .hasDateTimePicker .wrapInputHasIcon {
+  width: 40%;
+}
+.table-field-horizontal .hasTimePicker .field__input {
+  width: 40%;
+}
+.wrapRadio.radioHasImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.field-radioImage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.table-field-horizontal .table-row td {
+  height: 100%;
+}
+.wrapRadio .imageRadio {
+  width: 170px;
+  height: 170px;
+  margin-left: 40px;
+}
+.table-field-horizontal .row__field--data {
+  width: 600px;
+}
+.table-field-horizontal .wrapRadio:first-child {
+  margin-right: 0px;
+}
+.table-field-horizontal .wrapRadio:nth-child(odd) {
+  margin-right: 80px;
+  margin-left: 10px;
+}
+.wrapImageRadio {
+  min-width: 170px;
+  min-height: 170px;
+  width: 170px;
+  height: 170px;
+}
