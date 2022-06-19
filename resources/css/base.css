@@ -108,6 +108,9 @@ ol {
 .btn-delete {
   background-color: #ff9999;
 }
+img.icon_btn {
+  width: 25px;
+}
 .btn-delete:hover {
   background-color: #f14d4d;
 }
@@ -146,7 +149,7 @@ ol {
 /* Table Horizontal */
 .table-field-horizontal.table.table-bordered {
   width: 95%;
-  box-shadow: 13px 13px 30px rgb(0 0 0 / 30%);
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
 }
 .table-field-horizontal .table-row td {
   height: 80px;

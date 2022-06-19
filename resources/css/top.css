@@ -31,7 +31,7 @@
   background-color: #aaaaaa;
   padding: 20px;
   border-radius: 6px;
-  width: 351px;
+  width: 330px;
   height: 290px;
   right: 15px;
   display: none;
@@ -46,7 +46,7 @@
   color: white;
   margin-left: 40px;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 27px;
 }
 .dropdown__profile--item span {
   color: white;
