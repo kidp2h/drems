@@ -3,7 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     wrap: true,
     dateFormat: "Y/m/d",
     locale: "ja",
-    allowInput: true,
     monthSelectorType: "static",
+  });
+  flatpickr("#timepicker1", {
+    locale: "ja",
+    noCalendar: true,
+    enableTime: true,
+    dateFormat: "h:i",
   });
 });
