@@ -1,0 +1,101 @@
+.table-field-horizontal .table-row td:nth-child(odd) {
+  padding-left: 0 !important;
+}
+.table-field-horizontal.table.table-bordered {
+  width: 100%;
+}
+.table-field-horizontal {
+  margin: 30px 0px;
+}
+.table-field-horizontal .row__field {
+  width: auto !important;
+  font-size: 24px;
+  text-align: center;
+  min-width: 120px;
+  background-color: #eeeeee;
+}
+.table-field-horizontal .row__field--data {
+  width: auto !important;
+  font-size: 24px;
+  text-align: center;
+  min-width: 120px;
+  background-color: white !important;
+}
+
+/* Table Information Vertical*/
+
+.table-information-vertical .table-row td {
+  height: 80px;
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.table-information-vertical .col__table {
+  border: 1px solid;
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+}
+.table-information-vertical .col__table th:first-child {
+  width: 100px;
+}
+.table-information-vertical .col__table th {
+  min-height: 80px;
+  height: 70px;
+  vertical-align: middle;
+}
+th {
+  font-weight: normal !important;
+}
+.table-information-vertical .row__table .row__data {
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+  min-height: 70px;
+  height: 70px;
+}
+.table-information-vertical .row__table .row__data:first-child {
+  font-size: 32px;
+}
+
+.table-information-vertical .data-align-left {
+  text-align: left !important;
+  padding-left: 20px;
+  width: 350px !important;
+}
+.table-information-vertical .data-align-right {
+  text-align: right !important;
+  padding-right: 15px;
+  width: 200px !important;
+}
+.table-information-vertical .row__data:last-child {
+  width: 170px;
+}
+.table-information-vertical .text-red {
+  color: red;
+}
+.table-information-vertical .row__footer td:first-child {
+  font-size: 24px !important;
+}
+.table-information-vertical .row__footer {
+  background-color: var(--bgFieldTable);
+  height: 70px;
+}
+.table-information-vertical .row__footer td {
+  background-color: var(--bgFieldTable);
+}
+table:last-child {
+  margin-top: 15px;
+}
+.table-information-vertical .row__table td[rowspan="4"]:last-child {
+  width: 500px !important;
+}
+.table-information-vertical .row__table td[rowspan="4"]:not(:last-child) {
+  width: 350px !important;
+}
+.table-information-vertical .data-vertical-top {
+  vertical-align: top !important;
+  padding-top: 15px !important;
+}
