@@ -127,11 +127,15 @@ input.disabled {
   display: flex;
 }
 .table__divided #table__data:first-child {
+  /* margin-right: 30px; */
+  flex: 2;
+}
+.table__divided #table__data:nth-child(2) {
   margin-right: 30px;
-  flex: 3;
+  flex: 1;
 }
 .table__divided table:last-child {
-  margin-right: 30px;
+  /* margin-right: 30px; */
   flex: 1;
 }
 
@@ -143,7 +147,6 @@ input.disabled {
   height: 315px;
   margin: auto;
   display: block;
-  resize: none;
   font-size: 22px;
 }
 /* .row__textarea textarea {
@@ -160,4 +163,11 @@ input.disabled {
   font-size: 22px;
 } */
 td.row__data.row__textarea2 {
+}
+
+#table__data.table-field-vertical.not-rounded-left {
+  border-radius: 0px 6px 0px 0px;
+}
+#table__data.table-field-vertical.not-rounded-right {
+  border-radius: 6px 0px 0px 0px;
 }
