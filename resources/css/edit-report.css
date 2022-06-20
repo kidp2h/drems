@@ -1,0 +1,173 @@
+table.table.table-borderless.table-input {
+}
+td.row-input {
+  width: 0;
+  padding: 16px 0px;
+}
+.table-input .row__field {
+  text-align: right;
+  vertical-align: middle;
+  font-size: 22px;
+  width: 0;
+  white-space: nowrap;
+  padding-right: 10px !important;
+}
+.table-input .row__field:first-child {
+  padding: 0;
+}
+* {
+  font-size: 22px;
+}
+.table-input .row-input div {
+  width: fit-content;
+}
+.row-input {
+  width: fit-content;
+}
+input,
+select {
+  font-size: 22px;
+}
+
+.inputWithIcon input {
+  height: 60px;
+  width: 320px;
+}
+.group-select select {
+  width: 320px;
+}
+.group-select select.selectShort {
+  width: 200px;
+}
+.group-select select.selectMedium {
+  width: 230px;
+}
+.inputShort {
+  width: 157.5px;
+}
+.inputMedium {
+  width: 230px;
+}
+.inputText {
+  height: 60px;
+}
+.group-multi-input {
+  display: flex;
+  align-items: center;
+}
+.btn-resize {
+  margin-left: 15px;
+}
+input.disabled {
+  background-color: var(--grey);
+}
+.group-select .selectLong {
+  width: 360px;
+}
+.group-select .selectMLong {
+  width: 300px;
+}
+.text-align-right {
+  text-align: right;
+  padding: 20px;
+}
+.group-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group-select.jtf-start {
+  justify-content: flex-start !important;
+}
+.group-select select {
+  height: 60px;
+}
+.groupInputRange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px !important;
+}
+.data-align-right {
+  text-align: right;
+  padding-right: 50px;
+}
+.row__table .row__data:first-child {
+  font-size: 32px;
+}
+.row__table {
+  border-bottom: 3px solid rgba(14, 24, 95, 0.5);
+}
+.row__table:last-child {
+  border-bottom: 0px solid;
+}
+
+.table-field-vertical .row__table:nth-child(odd) {
+  background-color: white !important;
+}
+.table-field-vertical .row__table:hover {
+  background-color: #ccecff !important;
+}
+.table-field-vertical .row__table > .row__textarea {
+  background-color: white !important;
+  padding: 0;
+  padding-left: 15px;
+}
+.table-field-vertical .row__table:hover > .row__textarea {
+  background-color: white !important;
+  padding: 0;
+  padding-left: 15px;
+}
+.row__textarea:hover .row__table {
+  background-color: white !important;
+  padding: 0;
+  padding-left: 15px;
+}
+.table__divided {
+  display: flex;
+}
+.table__divided #table__data:first-child {
+  /* margin-right: 30px; */
+  flex: 2;
+}
+.table__divided #table__data:nth-child(2) {
+  margin-right: 30px;
+  flex: 1;
+}
+.table__divided table:last-child {
+  /* margin-right: 30px; */
+  flex: 1;
+}
+
+.row__textarea textarea {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 0;
+  width: -webkit-fill-available;
+  height: 315px;
+  margin: auto;
+  display: block;
+  font-size: 22px;
+}
+/* .row__textarea textarea {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 0;
+  width: 445px;
+  height: 315px;
+  margin: auto;
+  display: flex;
+  width: -webkit-fill-available;
+  resize: none;
+  padding-left: 10px;
+  font-size: 22px;
+} */
+td.row__data.row__textarea2 {
+}
+
+#table__data.table-field-vertical.not-rounded-left {
+  border-radius: 0px 6px 0px 0px;
+}
+#table__data.table-field-vertical.not-rounded-right {
+  border-radius: 6px 0px 0px 0px;
+}
