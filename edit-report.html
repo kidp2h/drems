@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作業日報 一覧</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/edit-report.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">作 業 日 報 編 集</div>
+      <div id="navbar__action">
+        <a href="./register-report.html" class="btn btn-register btn__primary"
+          >登録</a
+        >
+        <a href="./information-report.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <table class="table table-borderless table-input">
+        <tbody>
+          <tr class="table-row">
+            <td class="row__field">作業日</td>
+            <td class="row-input">
+              <div class="inputWithIcon" id="datetimepicker1">
+                <input
+                  type="text"
+                  data-input
+                  class="inputIcon"
+                  data-target="#datetimepicker1"
+                  style="background: white"
+                />
+                <img
+                  class="iconEndInput"
+                  src="./resources/images/icon_datepicker.svg"
+                  alt=""
+                  data-target="#datetimepicker1"
+                  data-toggle="datetimepicker"
+                  srcset=""
+                />
+              </div>
+            </td>
+            <td class="row__field">班</td>
+            <td class="row-input">
+              <div class="group-select">
+                <select class="form-select selectShort">
+                  <option selected>1234 大阪鋼太郎</option>
+                  <option value="1">1234 大阪鋼太郎</option>
+                  <option value="2">1234 大阪鋼太郎</option>
+                  <option value="3">1234 大阪鋼太郎</option>
+                </select>
+              </div>
+            </td>
+            <td class="row__field">注文番号</td>
+            <td class="row-input">
+              <div class="group-multi-input">
+                <div class="groupInputRange">
+                  <input
+                    type="number"
+                    class="inputText inputShort"
+                    value="2604"
+                  />
+                  <span class="separatorChar">－</span>
+                  <input
+                    type="number"
+                    class="inputText inputShort"
+                    value="340"
+                  />
+                </div>
+
+                <a href="#" class="btn btn-resize btn__primary">
+                  <img
+                    src="./resources/images/resize.svg"
+                    class="icon_btn"
+                    alt=""
+                    srcset=""
+                  />
+                </a>
+              </div>
+            </td>
+            <td class="row__field">検収量</td>
+            <td class="row-input">
+              <input
+                type="number"
+                class="inputText inputShort disabled"
+                value="43.000"
+                disabled
+              />
+            </td>
+            <td class="row__field">契約能率</td>
+            <td class="row-input">
+              <input
+                type="number"
+                class="inputText inputShort disabled"
+                value="43.000"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">職場</td>
+            <td class="row-input">
+              <div class="group-select">
+                <select class="form-select">
+                  <option selected>出荷</option>
+                  <option value="1">出荷</option>
+                  <option value="2">出荷</option>
+                  <option value="3">出荷</option>
+                </select>
+              </div>
+            </td>
+            <td class="row__field">組</td>
+            <td class="row-input">
+              <div class="group-select">
+                <select class="form-select selectShort">
+                  <option selected>Ａ組</option>
+                  <option value="1">Ａ組</option>
+                  <option value="2">Ａ組</option>
+                  <option value="3">Ａ組</option>
+                </select>
+              </div>
+            </td>
+            <td class="row__field">作業名称</td>
+            <td class="row-input">
+              <div class="group-select">
+                <select class="form-select selectLong">
+                  <option selected>グラインダー手入作業</option>
+                  <option value="1">グラインダー手入作業</option>
+                  <option value="2">グラインダー手入作業</option>
+                  <option value="3">グラインダー手入作業</option>
+                </select>
+                <a href="#" class="btn btn-resize btn__primary">
+                  <img
+                    src="./resources/images/resize.svg"
+                    class="icon_btn"
+                    alt=""
+                    srcset=""
+                  />
+                </a>
+              </div>
+            </td>
+            <td class="row__field">実績工数</td>
+            <td class="row-input">
+              <input
+                type="number"
+                class="inputText inputShort disabled"
+                value="15.000"
+                disabled
+              />
+            </td>
+            <td class="row__field">契約工数</td>
+            <td class="row-input">
+              <input
+                type="number"
+                class="inputText inputShort disabled"
+                value="15.000"
+                disabled
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="table__data" class="table-field-vertical">
+        <table class="table table-borderless">
+          <thead class="header__table">
+            <tr class="col__table">
+              <th scope="col">No</th>
+              <th scope="col">氏　名</th>
+              <th scope="col">開始時刻</th>
+              <th scope="col">終了時刻</th>
+              <th scope="col">休憩時間</th>
+              <th scope="col">実績工数</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td class="row__data">①</td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectLong">
+                    <option selected>1234 大阪鋼太郎</option>
+                    <option value="1">1234 大阪鋼太郎</option>
+                    <option value="2">1234 大阪鋼太郎</option>
+                    <option value="3">1234 大阪鋼太郎</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>7:30</option>
+                    <option value="1">7:30</option>
+                    <option value="2">7:30</option>
+                    <option value="3">7:30</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>13:00</option>
+                    <option value="1">13:00</option>
+                    <option value="2">13:00</option>
+                    <option value="3">13:00</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>1.00</option>
+                    <option value="1">1.00</option>
+                    <option value="2">1.00</option>
+                    <option value="3">1.00</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <input
+                  type="number"
+                  class="inputText inputMedium disabled"
+                  value="5.00"
+                  disabled
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">②</td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectLong">
+                    <option selected>1234 大阪鋼太郎</option>
+                    <option value="1">1234 大阪鋼太郎</option>
+                    <option value="2">1234 大阪鋼太郎</option>
+                    <option value="3">1234 大阪鋼太郎</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>7:30</option>
+                    <option value="1">7:30</option>
+                    <option value="2">7:30</option>
+                    <option value="3">7:30</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>13:00</option>
+                    <option value="1">13:00</option>
+                    <option value="2">13:00</option>
+                    <option value="3">13:00</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>1.00</option>
+                    <option value="1">1.00</option>
+                    <option value="2">1.00</option>
+                    <option value="3">1.00</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <input
+                  type="number"
+                  class="inputText inputMedium disabled"
+                  value="5.00"
+                  disabled
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">③</td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectLong">
+                    <option selected>1234 大阪鋼太郎</option>
+                    <option value="1">1234 大阪鋼太郎</option>
+                    <option value="2">1234 大阪鋼太郎</option>
+                    <option value="3">1234 大阪鋼太郎</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>7:30</option>
+                    <option value="1">7:30</option>
+                    <option value="2">7:30</option>
+                    <option value="3">7:30</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>13:00</option>
+                    <option value="1">13:00</option>
+                    <option value="2">13:00</option>
+                    <option value="3">13:00</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectMedium data-align-right">
+                    <option selected>1.00</option>
+                    <option value="1">1.00</option>
+                    <option value="2">1.00</option>
+                    <option value="3">1.00</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data">
+                <input
+                  type="number"
+                  class="inputText inputMedium disabled"
+                  value="5.00"
+                  disabled
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">④</td>
+              <td class="row__data">
+                <div class="group-select">
+                  <select class="form-select selectLong">
+                    <option selected>追加してください</option>
+                    <option value="1">追加してください</option>
+                    <option value="2">追加してください</option>
+                    <option value="3">追加してください</option>
+                  </select>
+                </div>
+              </td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data">
+                <input
+                  type="number"
+                  class="inputText inputMedium disabled"
+                  value="15.00"
+                  disabled
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table__divided">
+        <div id="table__data" class="table-field-vertical">
+          <table class="table table-borderless">
+            <thead class="header__table">
+              <tr class="col__table">
+                <th scope="col">No</th>
+                <th scope="col">シリーズ</th>
+                <th scope="col">処理量</th>
+                <th scope="col">検収量</th>
+                <th scope="col"></th>
+                <th scope="col">備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row__table">
+                <td class="row__data">①</td>
+                <td class="row__data">
+                  <div class="group-select">
+                    <select class="form-select selectMLong">
+                      <option selected>ABCD-1234</option>
+                      <option value="1">ABCD-1234</option>
+                      <option value="2">ABCD-1234</option>
+                      <option value="3">ABCD-1234</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort text-align-right"
+                    value="100.00"
+                  />
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort disabled text-align-right"
+                    value="5.00"
+                    disabled
+                  />
+                </td>
+                <td class="row__data row__action">
+                  <a href="#" class="btn btn__table btn-delete"
+                    ><img
+                      class="icon_btn"
+                      src="./resources/images/trash_can.svg"
+                      alt=""
+                      srcset=""
+                  /></a>
+                </td>
+                <td rowspan="4" class="row__data row__textarea">
+                  <textarea name="" id="" cols="25" rows="10"></textarea>
+                </td>
+              </tr>
+              <tr class="row__table">
+                <td class="row__data">②</td>
+                <td class="row__data">
+                  <div class="group-select">
+                    <select class="form-select selectMLong">
+                      <option selected>ABCD-1234</option>
+                      <option value="1">ABCD-1234</option>
+                      <option value="2">ABCD-1234</option>
+                      <option value="3">ABCD-1234</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort text-align-right"
+                    value="100.00"
+                  />
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort disabled text-align-right"
+                    value="5.00"
+                    disabled
+                  />
+                </td>
+                <td class="row__data row__action">
+                  <a href="#" class="btn btn__table btn-delete"
+                    ><img
+                      class="icon_btn"
+                      src="./resources/images/trash_can.svg"
+                      alt=""
+                      srcset=""
+                  /></a>
+                </td>
+                <!-- <td>x</td> -->
+              </tr>
+              <tr class="row__table">
+                <td class="row__data">③</td>
+                <td class="row__data">
+                  <div class="group-select">
+                    <select class="form-select selectMLong">
+                      <option selected>ABCD-1234</option>
+                      <option value="1">ABCD-1234</option>
+                      <option value="2">ABCD-1234</option>
+                      <option value="3">ABCD-1234</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort text-align-right"
+                    value="100.00"
+                  />
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort disabled text-align-right"
+                    value="5.00"
+                    disabled
+                  />
+                </td>
+                <td class="row__data row__action">
+                  <a href="#" class="btn btn__table btn-delete"
+                    ><img
+                      class="icon_btn"
+                      src="./resources/images/trash_can.svg"
+                      alt=""
+                      srcset=""
+                  /></a>
+                </td>
+                <!-- <td>x</td> -->
+              </tr>
+              <tr class="row__table">
+                <td class="row__data">④</td>
+                <td class="row__data">
+                  <div class="group-select">
+                    <select class="form-select selectMLong">
+                      <option selected>追加してください</option>
+                      <option value="1">追加してください</option>
+                      <option value="2">追加してください</option>
+                      <option value="3">追加してください</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort disabled text-align-right"
+                    value="100.00"
+                    disabled
+                  />
+                </td>
+                <td class="row__data">
+                  <input
+                    type="text"
+                    class="inputText inputShort text-align-right"
+                    value="5.00"
+                  />
+                </td>
+                <td class="row__data row__action"></td>
+                <!-- <td></td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="table__data" class="table-field-vertical">
+          <table class="table table-borderless">
+            <thead class="header__table">
+              <tr class="col__table">
+                <th scope="col">特記事項</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row__table">
+                <td class="row__data row__textarea" style="padding: 10px 3px">
+                  <textarea name="" id="" cols="35" rows="10"></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
+  <script src="./resources/js/main.js"></script>
+</html>
