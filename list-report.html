@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作業日報 一覧</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/list-report.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">作 業 日 報 一 覧</div>
+      <div id="navbar__action">
+        <a href="#" class="btn btn-print btn__primary">印刷</a>
+        <a href="./register-report.html" class="btn btn-register btn__primary"
+          >新規登録</a
+        >
+        <a href="./top.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="form__select">
+        <div class="wrap__checkbox">
+          <label class="label__select label__cb" for="select__cb"
+            >印刷All</label
+          >
+          <input
+            type="checkbox"
+            id="select__cb"
+            class="form-check-input"
+            name="select__cb"
+          />
+        </div>
+        <div>
+          <label class="label__select" for="select__set">組</label>
+          <select class="form-select" id="select__set" aria-label="select__x">
+            <option selected>Ｓ商品仕上場</option>
+            <option value="1">Ｓ商品仕上場</option>
+            <option value="2">Ｓ商品仕上場</option>
+            <option value="3">Ｓ商品仕上場</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__year">年</label>
+          <select
+            class="form-select"
+            id="select__year"
+            aria-label="select__year"
+          >
+            <option selected>2018 年</option>
+            <option value="1">2019 年</option>
+            <option value="2">2020 年</option>
+            <option value="3">2021 年</option>
+            <option value="3">2022 年</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__month">月</label>
+          <select
+            class="form-select"
+            id="select__month"
+            aria-label="select__month"
+          >
+            <option selected>1 月</option>
+            <option value="1">2 月</option>
+            <option value="2">3 月</option>
+            <option value="3">4 月</option>
+            <option selected>5 月</option>
+            <option value="1">6 月</option>
+            <option value="2">7 月</option>
+            <option value="3">8 月</option>
+            <option selected>9 月</option>
+            <option value="1">10 月</option>
+            <option value="2">11 月</option>
+            <option value="3">12 月</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__situation">状況</label>
+          <select
+            class="form-select"
+            id="select__situation"
+            aria-label="select__situation"
+          >
+            <option selected>すべて</option>
+            <option value="1">すべて</option>
+            <option value="2">すべて</option>
+            <option value="3">すべて</option>
+            <option value="3">すべて</option>
+          </select>
+        </div>
+      </div>
+      <div id="table__data" class="table-field-vertical">
+        <table class="table table-borderless">
+          <thead class="header__table">
+            <tr class="col__table">
+              <th scope="col">No</th>
+              <th scope="col">作業日</th>
+              <th scope="col">班</th>
+              <th scope="col">日報管理番号</th>
+              <th scope="col">注文番号</th>
+              <th scope="col">作業名称</th>
+              <th scope="col">職場</th>
+              <th scope="col">検収量</th>
+              <th scope="col">作業工数</th>
+              <th scope="col">状況</th>
+              <th scope="col">印刷</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td class="row__data">1</td>
+              <td class="row__data">1</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data"></td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">2</td>
+              <td class="row__data">1</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data">
+                <img
+                  src="./resources/images/check1.svg"
+                  class="img-check-row check1"
+                  alt=""
+                  srcset=""
+                />
+                <span>承認</span>
+              </td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">3</td>
+              <td class="row__data">2</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data">
+                <img
+                  src="./resources/images/doublecheck.svg"
+                  class="img-check-row doublecheck"
+                  alt=""
+                  srcset=""
+                />
+                <span>決裁</span>
+              </td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">4</td>
+              <td class="row__data">3</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data"></td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">5</td>
+              <td class="row__data">4</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data"></td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">6</td>
+              <td class="row__data">5</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data"></td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">7</td>
+              <td class="row__data">6</td>
+              <td class="row__data">2</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data"></td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">8</td>
+              <td class="row__data">7</td>
+              <td class="row__data">1</td>
+              <td class="row__data">12345678</td>
+              <td class="row__data">2604-340</td>
+              <td class="row__data">グラインダー手入れ作業</td>
+              <td class="row__data">Ｓ商品仕上場</td>
+              <td class="row__data">45.000</td>
+              <td class="row__data">15.00</td>
+              <td class="row__data"></td>
+              <td class="row__data row__checkbox">
+                <input
+                  type="checkbox"
+                  id="select__cb"
+                  class="form-check-input"
+                />
+              </td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav class="bar__page">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">&lt</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">&gt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
