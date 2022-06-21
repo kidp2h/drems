@@ -1,5 +1,3 @@
-table.table.table-borderless.table-input {
-}
 td.row-input {
   width: 0;
   padding: 16px 0px;
@@ -162,8 +160,6 @@ input.disabled {
   padding-left: 10px;
   font-size: 22px;
 } */
-td.row__data.row__textarea2 {
-}
 
 #table__data.table-field-vertical.not-rounded-left {
   border-radius: 0px 6px 0px 0px;

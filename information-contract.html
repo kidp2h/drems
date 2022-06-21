@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>社 員 表 示</title>
+    <title>作 業 表 示</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,10 +12,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
 
     <link
@@ -31,7 +27,7 @@
     ></script>
     <link rel="stylesheet" href="./resources/css/base.css" />
     <link rel="stylesheet" href="./resources/css/navbar.css" />
-    <link rel="stylesheet" href="./resources/css/manager-staff.css" />
+    <link rel="stylesheet" href="./resources/css/manager-contract.css" />
   </head>
   <body>
     <nav id="navbar">
@@ -43,11 +39,13 @@
         />
         <div id="navbar__text">DREMS</div>
       </div>
-      <div id="navbar__title-text">社 員 表 示</div>
+      <div id="navbar__title-text">作 業 表 示</div>
       <div id="navbar__action">
-        <a href="./edit-staff.html" class="btn btn-edit btn__primary">編集</a>
-        <a href="./list-staff.html" class="btn btn-remove btn__red">削除</a>
-        <a href="./list-staff.html" class="btn btn-return btn__grey">戻る</a>
+        <a href="./edit-contract.html" class="btn btn-edit btn__primary"
+          >編集</a
+        >
+        <a href="./list-contract.html" class="btn btn-remove btn__red">削除</a>
+        <a href="./list-contract.html" class="btn btn-return btn__grey">戻る</a>
       </div>
     </nav>
     <div class="container-fluid">
@@ -59,81 +57,104 @@
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">社員コード</td>
-            <td class="row__field--data">12345</td>
+            <td class="row__field">件名コード</td>
+            <td class="row__field--data">2603</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">氏名</td>
-            <td class="row__field--data">大阪　鋼太郎</td>
+            <td class="row__field">作業件名</td>
+            <td class="row__field--data">製品出荷</td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">区分コード</td>
+            <td class="row__field--data">301</td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">作業名称</td>
+            <td class="row__field--data">鋼矢板反転結束作業　製品出荷</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
             <td class="row__field">よみがな</td>
-            <td class="row__field--data">おおさか　こうたろう</td>
+            <td class="row__field--data">こうやいたはんてんけっそく</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">所属会社</td>
-            <td class="row__field--data">大阪富士工業株式会社</td>
-            <td class="row__field--status">コメント</td>
-          </tr>
-          <tr class="table-row">
-            <td class="row__field">所属部門</td>
+            <td class="row__field">契約部門</td>
             <td class="row__field--data">形鋼工場</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">有給休暇付与日</td>
-            <td class="row__field--data">2022/04/01</td>
+            <td class="row__field">検収方法</td>
+            <td class="row__field--data">総処理量</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">有給休暇付与日数</td>
+            <td class="row__field">検収単位</td>
+            <td class="row__field--data">本</td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">契約能率</td>
             <td class="row__field--data hasInput">
               <input
                 class="input__information disable"
-                type="number"
-                value="20"
+                type="text"
+                value="1.000"
                 disabled
               />
-              <span>日</span>
             </td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">職制</td>
-            <td class="row__field--data">課長</td>
+            <td class="row__field">契約工数（上限）</td>
+            <td class="row__field--data hasInput">
+              <input
+                class="input__information disable"
+                type="text"
+                value="1.200"
+                disabled
+              />
+            </td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">組</td>
-            <td class="row__field--data">Ａ組</td>
+            <td class="row__field">契約工数（下限）</td>
+            <td class="row__field--data hasInput">
+              <input
+                class="input__information disable"
+                type="text"
+                value="0.800"
+                disabled
+              />
+            </td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">グループ</td>
-            <td class="row__field--data">出荷</td>
+            <td class="row__field">タスクNo.</td>
+            <td class="row__field--data">123456</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">アクセス権限</td>
-            <td class="row__field--data">管理者</td>
-            <td class="row__field--status">コメント</td>
+            <td class="row__field">検収量チェック区分</td>
+            <td class="row__field--data">チェックする</td>
+            <td class="row__field--status">未入力のチェック有無</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">ログインパスワード</td>
-            <td class="row__field--data">********</td>
-            <td class="row__field--status">コメント</td>
+            <td class="row__field">シリーズ大分類</td>
+            <td class="row__field--data"></td>
+            <td class="row__field--status">一つ以上、選択してください</td>
           </tr>
           <tr class="table-row">
-            <td class="row__field">Ｅメール</td>
-            <td class="row__field--data">t-osaka@ofic.co.jp</td>
+            <td class="row__field">検収量計算区分</td>
+            <td class="row__field--data">計算する</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
             <td class="row__field">表示順番号</td>
-            <td class="row__field--data">99999</td>
+            <td class="row__field--data">999999</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
@@ -153,17 +174,16 @@
           </tr>
           <tr class="table-row">
             <td class="row__field">新規登録</td>
-            <td class="row__field--data">2022/04/01 09:00 日報　太郎</td>
+            <td class="row__field--data">2022/04/01 09:00　日報　太郎</td>
             <td class="row__field--status">コメント</td>
           </tr>
           <tr class="table-row">
             <td class="row__field">更新登録</td>
-            <td class="row__field--data">2022/04/02 11:30 就業　花子</td>
+            <td class="row__field--data">2022/04/02 11:30　就業　花子</td>
             <td class="row__field--status">コメント</td>
           </tr>
         </tbody>
       </table>
     </div>
   </body>
-  <script src="./resources/js/main.js"></script>
 </html>

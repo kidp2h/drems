@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作 業 一 覧</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/list-task.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">作 業 一 覧</div>
+      <div id="navbar__action">
+        <a href="#" class="btn btn-add">追加</a>
+        <a href="./top.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="form__select">
+        <div>
+          <label class="label__select" for="select__x">使用区分</label>
+          <select class="form-select" id="select__x" aria-label="select__x">
+            <option selected>使用中</option>
+            <option value="1">使用中</option>
+            <option value="2">使用中</option>
+            <option value="3">使用中</option>
+          </select>
+        </div>
+      </div>
+      <div id="table__data" class="table-field-vertical">
+        <table class="table table-borderless">
+          <thead class="header__table">
+            <tr class="col__table">
+              <th scope="col">No</th>
+              <th scope="col">作業コード</th>
+              <th scope="col">作業件名</th>
+              <th scope="col">区分コード</th>
+              <th scope="col">作業名称</th>
+              <th scope="col">検収単位</th>
+              <th scope="col">契約能率</th>
+              <th scope="col">契約工数(上限)</th>
+              <th scope="col">契約工数(下限)</th>
+              <th scope="col">タスクNo.</th>
+              <th scope="col">シリーズ</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td class="row__data">1</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">2</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">344</td>
+              <td class="row__data">幅切り定例</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.000</td>
+              <td class="row__data">1.400</td>
+              <td class="row__data">0.600</td>
+              <td class="row__data">619906</td>
+              <td class="row__data">その他</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">3</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">346</td>
+              <td class="row__data">JES手入</td>
+              <td class="row__data">時間</td>
+              <td class="row__data">16.000</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619907</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">4</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">348</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">時間</td>
+              <td class="row__data">12.148</td>
+              <td class="row__data">1.250</td>
+              <td class="row__data">0.750</td>
+              <td class="row__data">619908</td>
+              <td class="row__data">H形鋼</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">5</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">6</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">7</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">8</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">9</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">10</td>
+              <td class="row__data">2604</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">340</td>
+              <td class="row__data">グラインダー手入作業</td>
+              <td class="row__data">本</td>
+              <td class="row__data">1.800</td>
+              <td class="row__data">1.200</td>
+              <td class="row__data">0.800</td>
+              <td class="row__data">619905</td>
+              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-delete"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/trash_can.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-staff.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav class="bar__page">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">&lt</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">&gt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
