@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./resources/css/base.css" />
     <link rel="stylesheet" href="./resources/css/navbar.css" />
     <link rel="stylesheet" href="./resources/css/list.css" />
+    <link rel="stylesheet" href="./resources/css/series.css" />
   </head>
   <body>
     <nav id="navbar">
@@ -62,32 +63,20 @@
           <thead class="header__table">
             <tr class="col__table">
               <th scope="col">No</th>
-              <th scope="col">作業コード</th>
-              <th scope="col">作業件名</th>
-              <th scope="col">区分コード</th>
-              <th scope="col">作業名称</th>
-              <th scope="col">検収単位</th>
-              <th scope="col">契約能率</th>
-              <th scope="col">契約工数(上限)</th>
-              <th scope="col">契約工数(下限)</th>
-              <th scope="col">タスクNo.</th>
-              <th scope="col">シリーズ</th>
+              <th scope="col">大分類</th>
+              <th scope="col">中分類</th>
+              <th scope="col">小分類（シリーズ）</th>
+              <th scope="col">係数</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr class="row__table">
               <td class="row__data">1</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">Ｈ形鋼</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">JSP-2　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -97,7 +86,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -109,16 +98,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">2</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">344</td>
-              <td class="row__data">幅切り定例</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.000</td>
-              <td class="row__data">1.400</td>
-              <td class="row__data">0.600</td>
-              <td class="row__data">619906</td>
-              <td class="row__data">その他</td>
+              <td class="row__data">Ｈ形鋼</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">JSP-2　外面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -128,7 +111,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -140,16 +123,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">3</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">346</td>
-              <td class="row__data">JES手入</td>
-              <td class="row__data">時間</td>
-              <td class="row__data">16.000</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619907</td>
               <td class="row__data">鋼矢板</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">KSB-3　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -159,7 +136,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -171,16 +148,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">4</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">348</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">時間</td>
-              <td class="row__data">12.148</td>
-              <td class="row__data">1.250</td>
-              <td class="row__data">0.750</td>
-              <td class="row__data">619908</td>
-              <td class="row__data">H形鋼</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">JSP-2W　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -190,7 +161,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -202,16 +173,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">5</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -221,7 +186,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -233,16 +198,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">6</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -252,7 +211,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -264,16 +223,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">7</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -283,7 +236,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -295,16 +248,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">8</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -314,7 +261,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -326,16 +273,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">9</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -345,7 +286,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
@@ -357,16 +298,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">10</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -376,7 +311,7 @@
                     srcset=""
                 /></a>
                 <a
-                  href="./information-staff.html"
+                  href="./information-series.html"
                   class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"

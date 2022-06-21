@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>シ リ ー ズ 編 集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/information.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">シ リ ー ズ 編 集</div>
+      <div id="navbar__action">
+        <a
+          href="./information-series.html"
+          class="btn btn-register btn__primary"
+          >登録</a
+        >
+        <a href="./information-series.html" class="btn btn-return btn__grey"
+          >戻る</a
+        >
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <table class="table table-bordered table-field-horizontal">
+        <tbody>
+          <tr class="table-row">
+            <td class="row__field">登録ID</td>
+            <td class="row__field--data">00001</td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">使用部門</td>
+            <td class="row__field--data hasInput">
+              <select class="form-select field__input">
+                <option selected>形鋼工場</option>
+                <option value="1">形鋼工場</option>
+                <option value="2">形鋼工場</option>
+                <option value="3">形鋼工場</option>
+              </select>
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">大分類</td>
+            <td class="row__field--data">
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioCategoryPrimary"
+                  id="radioCategoryPrimary"
+                  checked
+                />
+                <label class="form-check-label" for="radioCategoryPrimary">
+                  Ｈ形鋼
+                </label>
+              </div>
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioCategoryPrimary"
+                  id="radioCategoryPrimary1"
+                />
+                <label class="form-check-label" for="radioCategoryPrimary1">
+                  鋼矢板
+                </label>
+              </div>
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioCategoryPrimary"
+                  id="radioCategoryPrimary2"
+                />
+                <label class="form-check-label" for="radioCategoryPrimary2">
+                  材料
+                </label>
+              </div>
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioCategoryPrimary"
+                  id="radioCategoryPrimary3"
+                />
+                <label class="form-check-label" for="radioCategoryPrimary3">
+                  その他
+                </label>
+              </div>
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">
+              <div class="wrap__field">
+                <span>中分類</span>
+                <span class="field__require">必須</span>
+              </div>
+            </td>
+            <td class="row__field--data hasInput">
+              <input type="text" value="一般" class="field__input" />
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">
+              <div class="wrap__field">
+                <span>小分類（シリーズ）</span>
+                <span class="field__require">必須</span>
+              </div>
+            </td>
+            <td class="row__field--data hasInput">
+              <input
+                type="text"
+                value="JSP-2　外面（A）"
+                class="field__input"
+              />
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">
+              <div class="wrap__field">
+                <span>係数</span>
+                <span class="field__require">必須</span>
+              </div>
+            </td>
+            <td class="row__field--data hasInput">
+              <input
+                class="input__information"
+                type="text"
+                value="1.000"
+                disabled
+              />
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">表示順番号</td>
+            <td class="row__field--data hasInput">
+              <input type="text" value="99999" class="field__input" />
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">備考</td>
+            <td class="row__field--data hasInput txtArea">
+              <textarea class="field__input" rows="0"></textarea>
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">使用区分</td>
+            <td class="row__field--data">
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioTypeUsage"
+                  id="radioTypeUsage"
+                  checked
+                />
+                <label class="form-check-label" for="radioTypeUsage">
+                  使用する
+                </label>
+              </div>
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioTypeUsage"
+                  id="radioTypeUsage1"
+                />
+                <label class="form-check-label" for="radioTypeUsage1">
+                  使用しない
+                </label>
+              </div>
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">集計区分</td>
+            <td class="row__field--data">
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioTypeAggregate"
+                  id="radioTypeAggregate"
+                  checked
+                />
+                <label class="form-check-label" for="radioTypeAggregate">
+                  集計対象
+                </label>
+              </div>
+              <div class="wrapRadio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioTypeAggregate"
+                  id="radioTypeAggregate1"
+                />
+                <label class="form-check-label" for="radioTypeAggregate1">
+                  集計対象外
+                </label>
+              </div>
+            </td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">新規登録</td>
+            <td class="row__field--data">2022/04/01 09:00　日報　太郎</td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+          <tr class="table-row">
+            <td class="row__field">更新登録</td>
+            <td class="row__field--data">2022/04/02 11:30　就業　花子</td>
+            <td class="row__field--status">コメント</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
