@@ -177,6 +177,7 @@ img.icon_btn {
 }
 .table-field-horizontal .row__field--data.hasInput {
   padding-left: 5px !important;
+  padding: 5px !important;
 }
 .table-field-horizontal .row__field--data.txtArea {
   text-align: center;
@@ -209,10 +210,12 @@ img.icon_btn {
 .table-field-horizontal .field__input {
   width: 100%;
   padding: 12px;
+  height: 100%;
   border: 1px solid;
   border-radius: 6px;
   font-size: 20px;
   color: black;
+  display: block;
 }
 .table-field-horizontal .field__input:focus {
   outline: none;
@@ -225,6 +228,7 @@ img.icon_btn {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 100%;
 }
 .table-field-horizontal .wrap__field--data .btn {
   margin-left: 18px;
@@ -239,13 +243,18 @@ img.icon_btn {
 }
 
 .table-field-horizontal .wrapRadio {
-  display: inline;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+.table-field-horizontal .form-check-input {
+  margin-top: 0;
 }
 .table-field-horizontal .wrapRadio:first-child {
   margin-right: 50px;
 }
 .table-field-horizontal .form-check-label {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 .table-field-horizontal .table-row .row__field:first-child {
   font-size: 20px;
@@ -262,6 +271,7 @@ img.iconInput {
 }
 .wrapInputHasIcon {
   position: relative;
+  height: 100%;
 }
 
 .bar__page {
@@ -339,6 +349,29 @@ input[type="number"] {
 input.disabled[type="number"] {
   text-align: right;
   padding-right: 10px;
+}
+
+.input__information {
+  height: 100%;
+  padding: 12px !important;
+  border: 1px solid;
+  border-radius: 6px;
+  text-align: right !important;
+  font-size: 20px;
+}
+.input__information.disable {
+  border: none;
+}
+.input__information.disable:focus {
+  border: none;
+  outline: none;
+}
+.input__information[disabled] {
+  color: black;
+  background-color: white;
+}
+.wrapRadio label.form-check-label {
+  min-width: 130px;
 }
 /* .
 
