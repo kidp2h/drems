@@ -1,24 +1,3 @@
-.form-select {
-  height: 49px;
-  width: 185px;
-  border: 1px solid;
-  border-radius: 6px;
-  font-size: 20px;
-  text-align: center;
-  color: black;
-}
-
-.form__select {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-end;
-}
-.form__select div {
-  margin-right: 30px;
-}
-.form__select div:last-child {
-  margin-right: 0px;
-}
 .label__select {
   margin-bottom: 15px;
   margin-left: 15px;
@@ -31,8 +10,6 @@
   flex-direction: column;
   align-items: center;
   margin-right: 50px !important;
-}
-.label__cb {
 }
 .wrap__checkbox input {
   margin: 15px 0;

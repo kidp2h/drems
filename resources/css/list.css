@@ -13,7 +13,7 @@
   flex-direction: row;
   align-self: flex-end;
 }
-.form__select div:first-child {
+.form__select div {
   margin-right: 30px;
 }
 .form__select div:last-child {

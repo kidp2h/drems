@@ -77,3 +77,6 @@ input.numInput.flatpickr-minute {
 .flatpickr-time-separator {
   font-size: 32px;
 }
+.container {
+  align-items: flex-start;
+}
