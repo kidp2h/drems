@@ -1,0 +1,9 @@
+.table-field-vertical .row__action {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 77px;
+  padding-right: 20px;
+}
