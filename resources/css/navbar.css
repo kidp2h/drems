@@ -26,15 +26,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  z-index: 99;
 }
 #navbar__title-text {
   color: white;
   font-size: 26px;
   line-height: 42px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
 }
 #navbar__action {
   display: flex;
   justify-self: flex-end;
+  z-index: 99;
 }
 #navbar__action .btn {
   font-size: 22px;

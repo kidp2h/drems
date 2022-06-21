@@ -1,0 +1,10 @@
+.row__field.disabled + .row__field--data {
+  background-color: #eeeeee;
+}
+.row__field.disabled {
+  background-color: #eeeeee;
+}
+.row__field--data select {
+  width: 50% !important;
+  text-align: center;
+}

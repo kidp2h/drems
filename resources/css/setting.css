@@ -1,12 +1,3 @@
-.nameTable {
-  font-size: 20px;
-  padding: 15px;
-  border-left: 10px solid var(--primary);
-  height: 42px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
 .table-field-horizontal .row__field {
   width: 350px;
 }
