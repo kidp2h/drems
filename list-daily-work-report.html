@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>就 業 日 報 一 覧</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/list.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">就 業 日 報</div>
+      <div id="navbar__action">
+        <a href="#" class="btn btn-exclamation-triangle">
+          <img
+            src="./resources/images/exclamation-triangle.svg"
+            alt=""
+            srcset=""
+          />
+          勤務時間が所定労働時間に達していません。</a
+        >
+        <a href="./top.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="form__select">
+        <div>
+          <label class="label__select" for="select__x">組</label>
+          <select class="form-select" id="select__x" aria-label="select__x">
+            <option selected>Ａ組</option>
+            <option value="1">Ａ組</option>
+            <option value="2">Ａ組</option>
+            <option value="3">Ａ組</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">年</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="2019">2019 年</option>
+            <option value="2020">2020 年</option>
+            <option value="2021">2021 年</option>
+            <option selected value="2022">2022 年</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">月</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="1">1 月</option>
+            <option value="2">2 月</option>
+            <option value="3">3 月</option>
+            <option value="4">4 月</option>
+            <option selected value="5">5 月</option>
+            <option value="6">6 月</option>
+            <option value="7">7 月</option>
+            <option value="8">8 月</option>
+            <option value="9">9 月</option>
+            <option value="10">10 月</option>
+            <option value="11">11 月</option>
+            <option value="12">12 月</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">15 日</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="1">1 日</option>
+            <option value="2">2 日</option>
+            <option value="3">3 日</option>
+            <option value="4">4 日</option>
+            <option value="5">5 日</option>
+            <option value="6">6 日</option>
+            <option value="7">7 日</option>
+            <option value="8">8 日</option>
+            <option value="8">9 日</option>
+            <option value="10">10 日</option>
+            <option value="11">11 日</option>
+            <option value="12">12 日</option>
+            <option value="13">13 日</option>
+            <option value="14">14 日</option>
+            <option selected value="15">15 日</option>
+            <option value="16">16 日</option>
+            <option value="17">17 日</option>
+            <option value="18">18 日</option>
+            <option value="18">18 日</option>
+            <option value="20">20 日</option>
+            <option value="21">21 日</option>
+            <option value="22">22 日</option>
+            <option value="23">23 日</option>
+            <option value="24">24 日</option>
+            <option value="25">25 日</option>
+            <option value="26">26 日</option>
+            <option value="27">27 日</option>
+            <option value="28">28 日</option>
+            <option value="29">29 日</option>
+            <option value="30">30 日</option>
+            <option value="31">31 日</option>
+          </select>
+        </div>
+      </div>
+      <div id="table__data" class="table-field-vertical">
+        <table class="table table-borderless">
+          <thead class="header__table">
+            <tr class="col__table">
+              <th scope="col">No</th>
+              <th scope="col">社員コード</th>
+              <th scope="col">氏名</th>
+              <th scope="col">勤務計画</th>
+              <th scope="col">勤務実績</th>
+              <th scope="col">始業時刻</th>
+              <th scope="col">終業時刻</th>
+              <th scope="col">休憩時間</th>
+              <th scope="col">勤務時間</th>
+              <th scope="col">早残時間</th>
+              <th scope="col">作業工数</th>
+              <th scope="col">深夜時間</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td class="row__data">1</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">14:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">
+                <span class="exclamation__sign">! </span>6.75
+              </td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">2</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">3</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">4</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">5</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">6</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">7</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">8</td>
+              <td class="row__data">10001</td>
+              <td class="row__data">大阪鋼太郎</td>
+              <td class="row__data">普通出勤</td>
+              <td class="row__data">有給休暇</td>
+              <td class="row__data">06:45</td>
+              <td class="row__data">15:15</td>
+              <td class="row__data">0.75</td>
+              <td class="row__data">7.75</td>
+              <td class="row__data">0.50</td>
+              <td class="row__data">7.25</td>
+              <td class="row__data">0.00</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn__primary"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/pencil.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a
+                  href="./information-daily-work-report.html"
+                  class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav class="bar__page">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">&lt</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">&gt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+.container-fluid {
+  width: 88%;
+}
+.group-2-table .row__field {
+  width: 280px !important;
+}
+.group-2-table table:first-child {
+  margin-right: 30px;
+}
+.row__field--data {
+  width: 500px !important;
+}
+.table-information-vertical .table-row td {
+  height: 80px;
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.table-information-vertical .col__table {
+  border: 1px solid;
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+}
+.table-information-vertical .col__table th:first-child {
+  width: 100px;
+}
+.table-information-vertical .col__table th {
+  min-height: 80px;
+  height: 70px;
+  vertical-align: middle;
+}
+th {
+  font-weight: normal !important;
+}
+.table-information-vertical .row__table .row__data {
+  font-size: 24px;
+  vertical-align: middle;
+  border: 1px solid black;
+  min-height: 70px;
+  height: 70px;
+  /* width: 350px; */
+}
+
+.table-information-vertical .data-align-left {
+  text-align: left !important;
+  padding-left: 20px;
+  width: 350px !important;
+}
+.table-information-vertical .data-align-right {
+  text-align: right !important;
+  padding-right: 15px;
+  width: 200px !important;
+}
+.table-information-vertical .row__data:last-child {
+  width: 170px;
+}
+.table-information-vertical .text-red {
+  color: red;
+}
+.table-information-vertical .row__footer td:first-child {
+  font-size: 24px !important;
+}
+.table-information-vertical .row__footer {
+  background-color: var(--bgFieldTable);
+  height: 70px;
+}
+.table-information-vertical .row__footer td {
+  background-color: var(--bgFieldTable);
+}
+.table-information-vertical .row__table td[rowspan="4"]:last-child {
+  width: 500px !important;
+}
+.table-information-vertical .row__table td[rowspan="4"]:not(:last-child) {
+  width: 350px !important;
+}
+.table-information-vertical .data-vertical-top {
+  vertical-align: top !important;
+  padding-top: 15px !important;
+}
+.row__table td {
+  text-align: center;
+  padding: 0 27px;
+}
+.row__table td.data-align-left {
+  width: 350px !important;
+  text-align: left !important;
+}
+
+.table-information-vertical .row__action {
+  width: 100px !important;
+}
+.table-information-vertical .row__table:last-child {
+  background-color: #eeeeee;
+}
