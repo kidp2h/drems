@@ -217,6 +217,19 @@ input.disabled[type="number"] {
   border-color: black !important;
   color: red;
 }
+
+.wrap__checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px !important;
+}
+.wrap__checkbox input {
+  margin: 15px 0;
+  width: 18px;
+  height: 18px;
+}
+
 /* .
 
 .inputSelect {

@@ -5,17 +5,6 @@
   line-height: 23px;
   font-weight: 400;
 }
-.wrap__checkbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 50px !important;
-}
-.wrap__checkbox input {
-  margin: 15px 0;
-  width: 18px;
-  height: 18px;
-}
 
 img.img-check-row {
   min-width: 20px;
