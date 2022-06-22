@@ -66,8 +66,8 @@ ol {
 img.iconInput {
   position: absolute;
   right: 0;
-  top: 0;
-  transform: translate(-50%, 50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapInputHasIcon {
   position: relative;

@@ -82,14 +82,11 @@
           </tr>
           <tr class="table-row">
             <td class="row__field">掲載開始時刻</td>
-            <td
-              class="row__field--data hasInput hasTimePicker"
-              id="timepicker1"
-            >
+            <td class="row__field--data hasInput hasTimePicker">
               <input
                 type="text"
                 class="field__input flatpickr-input"
-                data-target="#timepicker1"
+                id="timepicker1"
               />
             </td>
             <td class="row__field--status"></td>
@@ -122,27 +119,33 @@
           </tr>
           <tr class="table-row">
             <td class="row__field">掲載終了時刻</td>
-            <td
-              class="row__field--data hasInput hasTimePicker"
-              id="timepicker1"
-            >
+            <td class="row__field--data hasInput hasTimePicker">
               <input
                 type="text"
-                class="field__input flatpickr-input"
-                data-target="#timepicker1"
+                class="field__input flatpickr flatpickr-input"
+                id="timepicker2"
               />
             </td>
             <td class="row__field--status"></td>
           </tr>
           <tr class="table-row">
             <td class="row__field">掲載内容</td>
-            <td class="row__field--data field-multiline">
+            <td class="row__field--data hasInput txtArea">
+              <textarea class="field__input" rows="6">
+【DREMSメンテナンスのお知らせ】
+以下日程でシステムメンテナンスを行います。
+期間中はシステムを利用できません。
+日時：2022年2月22日(火)　20:00～22:00
+問合せ先：◯◯課　◯◯
+              </textarea>
+            </td>
+            <!-- <td class="row__field--data field-multiline">
               <div>【DREMSメンテナンスのお知らせ】</div>
               <div>以下日程でシステムメンテナンスを行います。</div>
               <div>期間中はシステムを利用できません。</div>
               <div>日時：2022年2月22日(火)　20:00～22:00</div>
               <div>問合せ先：◯◯課　◯◯</div>
-            </td>
+            </td> -->
             <td class="row__field--status"></td>
           </tr>
           <tr class="table-row hasImage">

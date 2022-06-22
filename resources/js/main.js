@@ -6,9 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
     monthSelectorType: "static",
   });
   flatpickr("#timepicker1", {
-    locale: "ja",
-    noCalendar: true,
     enableTime: true,
-    dateFormat: "h:i",
+    noCalendar: true,
+    dateFormat: "H:i",
+    time_24hr: true,
+  });
+  flatpickr("#timepicker2", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+    time_24hr: true,
   });
 });
