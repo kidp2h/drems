@@ -27,10 +27,14 @@
 }
 .label__select {
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 7px;
   font-size: 20px;
   line-height: 23px;
   font-weight: 400;
+  min-height: 23px;
+}
+.label__select.label__cb {
+  margin-left: 0px;
 }
 
 #table__data.table-field-vertical {
@@ -122,4 +126,24 @@ img.icon_btn {
 }
 .table-field-vertical .row__table.row__danger {
   background-color: #ffcccc !important;
+}
+
+.group2picker div {
+  margin: 0;
+}
+.char-range {
+  margin: 0px 20px;
+}
+
+th.data-align-left {
+  text-align: left;
+}
+th.data-align-right {
+  text-align: right;
+}
+tr.data-align-left {
+  text-align: left;
+}
+.row__table.all-align-left td {
+  text-align: left;
 }

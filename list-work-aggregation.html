@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作 業 日 報 承 認</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/list.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">作 業 日 報 承 認</div>
+      <div id="navbar__action">
+        <a href="#" class="btn btn-add">ダウンロード</a>
+        <a href="./top.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="form__select">
+        <div>
+          <label class="label__select">表示開始</label>
+          <div class="d-flex align-items-center group2picker">
+            <div class="inputWithIcon" id="datetimepicker1">
+              <input
+                type="text"
+                data-input
+                class="inputIcon"
+                data-target="#datetimepicker1"
+                style="background: white"
+              />
+              <img
+                class="iconEndInput"
+                src="./resources/images/icon_datepicker.svg"
+                alt=""
+                data-target="#datetimepicker1"
+                data-toggle="datetimepicker"
+                srcset=""
+              />
+            </div>
+            <span class="char-range"> ～ </span>
+            <div class="inputWithIcon" id="datetimepicker2">
+              <input
+                type="text"
+                data-input
+                class="inputIcon"
+                data-target="#datetimepicker2"
+                style="background: white"
+              />
+              <img
+                class="iconEndInput"
+                src="./resources/images/icon_datepicker.svg"
+                alt=""
+                data-target="#datetimepicker2"
+                data-toggle="datetimepicker"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="group2radio">
+          <label for="" class="label__select">集計区分</label>
+          <div class="wrap__checkbox--inline">
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb1"
+                name="radioCB"
+                checked
+              />
+              <label for="cb1">報告用</label>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb2"
+                name="radioCB"
+              />
+              <label for="cb2">社内用</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="table__data" class="table-field-vertical">
+        <table class="table table-borderless">
+          <thead class="header__table">
+            <tr class="col__table">
+              <th scope="col">No</th>
+              <th scope="col">件名コード</th>
+              <th scope="col">区分コード</th>
+              <th scope="col">作業件名</th>
+              <th scope="col">作業名称</th>
+              <th scope="col">単位</th>
+              <th scope="col">作業工数</th>
+              <th scope="col">検収量</th>
+              <th scope="col">タスクNo.</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td class="row__data">1</td>
+              <td class="row__data">2606</td>
+              <td class="row__data">001</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">スケール揚げ</td>
+              <td class="row__data">時間</td>
+              <td class="row__data">32.00</td>
+              <td class="row__data"></td>
+              <td class="row__data">619905</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">2</td>
+              <td class="row__data">2606</td>
+              <td class="row__data">002</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">水冷設備目詰まり除去（作業費）</td>
+              <td class="row__data">時間</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">3</td>
+              <td class="row__data">2603</td>
+              <td class="row__data">001</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">水冷設備目詰まり除去（建材費）</td>
+              <td class="row__data">点</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">4</td>
+              <td class="row__data">2606</td>
+              <td class="row__data">004</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">工場4S作業</td>
+              <td class="row__data">時間</td>
+              <td class="row__data">35.00</td>
+              <td class="row__data"></td>
+              <td class="row__data">612500</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">5</td>
+              <td class="row__data">2609</td>
+              <td class="row__data">001</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">工場精整の工作作業</td>
+              <td class="row__data">時間</td>
+              <td class="row__data">44.25</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">6</td>
+              <td class="row__data">2609</td>
+              <td class="row__data">002</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">運搬作業</td>
+              <td class="row__data">回</td>
+              <td class="row__data">8.00</td>
+              <td class="row__data">209.000</td>
+              <td class="row__data">619905</td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">7</td>
+              <td class="row__data">2609</td>
+              <td class="row__data">003</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">補修保全作業</td>
+              <td class="row__data">時間</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">8</td>
+              <td class="row__data">2611</td>
+              <td class="row__data">001</td>
+              <td class="row__data">製品手入</td>
+              <td class="row__data">工場異常材発生増対応道工具リ</td>
+              <td class="row__data">点</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">9</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td class="row__data">10</td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data"></td>
+              <td class="row__data row__action">
+                <a href="#" class="btn btn__table btn-view"
+                  ><img
+                    class="icon_btn"
+                    src="./resources/images/view.svg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav class="bar__page">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">&lt</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">&gt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
+  <script src="./resources/js/main.js"></script>
+</html>

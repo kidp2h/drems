@@ -229,6 +229,22 @@ input.disabled[type="number"] {
   width: 18px;
   height: 18px;
 }
+.wrap__checkbox--inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrap__checkbox--inline input {
+  margin: 15px 0;
+  width: 18px;
+  height: 18px;
+}
+.wrap__checkbox--inline label {
+  margin-left: 10px;
+}
+.wrap__checkbox--inline label:first-child {
+  margin-right: 20px;
+}
 
 /* .
 
