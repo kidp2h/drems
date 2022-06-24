@@ -1,0 +1,149 @@
+.group2radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.group-table .table__list--staff {
+  flex: 1;
+  margin-right: 15px;
+}
+.group-table .table__list--workPlan {
+  flex: 4;
+}
+.group-table thead {
+  height: 129px;
+}
+.group-table {
+  margin-top: 30px;
+}
+.empty__row {
+  height: 86px;
+}
+table {
+  text-align: center;
+  color: black;
+}
+.header__table {
+  background-color: #eeeeee;
+  text-align: center;
+}
+.header__table th {
+  font-weight: normal;
+}
+.table__list--staff .header__table {
+  /* height: fit-content; */
+}
+th {
+  vertical-align: middle;
+}
+.table__list--workPlan .header__table tr {
+  height: 43px;
+}
+thead,
+tbody,
+tfoot {
+  border: 1px solid;
+}
+.row__col {
+  height: 43px;
+}
+tr {
+  color: black;
+}
+tfoot {
+  background-color: #eeeeee;
+  height: 85px;
+}
+.col__no {
+  width: 90px;
+}
+.col__subtotal {
+  max-width: 90px;
+  width: 90px;
+}
+.row__table {
+  height: 65px;
+}
+.row__table td {
+  height: 65px !important;
+  text-align: center;
+  vertical-align: middle;
+}
+td div.hour {
+  color: #666666;
+  text-align: right;
+  font-size: 15px;
+}
+.table__list--workPlan .row__table td {
+  width: 65px;
+  height: 65px;
+}
+.table__list--workPlan .row__table td span {
+  font-size: 25px;
+}
+.group-table-holiday {
+  display: flex;
+  /* width: 95%; */
+}
+.group-table-holiday thead {
+  height: 67px;
+}
+.group-table-holiday tbody tr {
+  height: 67px;
+}
+.group-table-holiday tbody tr td {
+  height: 67px;
+}
+.table__holiday {
+  margin-right: 15px;
+  flex: 1;
+}
+.table__holiday tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+.table__detail-holiday {
+  flex: 4;
+}
+.table__detail-holiday tbody tr {
+  height: 67px;
+}
+
+.table__holiday td {
+  padding: 0;
+}
+.bg-grey {
+  background-color: #eeeeee;
+}
+.field__group div {
+  margin-top: 10px;
+}
+.field__group span {
+  font-size: 20px;
+  font-weight: normal;
+}
+.data__group div {
+  margin-top: 10px;
+}
+.data__group span {
+  font-size: 20px;
+}
+.wrap__text span {
+  font-size: 17px;
+}
+.wrap__text span:first-child {
+  margin-right: 5px;
+}
+.table > :not(caption) > * > * {
+  padding: 0;
+}
+.table__detail-holiday tr td {
+  width: fit-content;
+}
+.bg-blue {
+  background-color: #ccccff !important;
+}
+.table__detail-holiday table {
+  width: 85%;
+}

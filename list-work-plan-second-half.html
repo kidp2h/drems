@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>勤 務 計 画 表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/list.css" />
+    <link rel="stylesheet" href="./resources/css/work-plan.css" />
+    <style>
+      .table__list--workPlan table {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">勤 務 計 画 表</div>
+      <div id="navbar__action">
+        <a href="#" class="btn btn-add">インポート</a>
+        <a href="./top.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="form__select">
+        <div>
+          <label class="label__select" for="select__x">組</label>
+          <select class="form-select" id="select__x" aria-label="select__x">
+            <option selected>Ｂ組</option>
+            <option value="1">Ｂ組</option>
+            <option value="2">Ｂ組</option>
+            <option value="3">Ｂ組</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">グループ</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option selected>商品仕上</option>
+            <option value="1">商品仕上</option>
+            <option value="2">商品仕上</option>
+            <option value="3">商品仕上</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">年</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="2019">2019 年</option>
+            <option value="2020">2020 年</option>
+            <option value="2021">2021 年</option>
+            <option selected value="2022">2022 年</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">月</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="1">1 月</option>
+            <option value="2">2 月</option>
+            <option value="3">3 月</option>
+            <option value="4">4 月</option>
+            <option selected value="5">5 月</option>
+            <option value="6">6 月</option>
+            <option value="7">7 月</option>
+            <option value="8">8 月</option>
+            <option value="9">9 月</option>
+            <option value="10">10 月</option>
+            <option value="11">11 月</option>
+            <option value="12">12 月</option>
+          </select>
+        </div>
+        <div class="group2radio">
+          <label for="" class="label__select"></label>
+          <div class="wrap__checkbox--inline">
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb1"
+                name="radioCB"
+              />
+              <label for="cb1">前半</label>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb2"
+                name="radioCB"
+                checked
+              />
+              <label for="cb2">後半</label>
+            </div>
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb3"
+                name="radioCB"
+              />
+              <label for="cb3">集計</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-table d-flex flex-row">
+        <table class="table table-bordered table__list--staff">
+          <thead class="header__table">
+            <tr class="empty__row">
+              <th colspan="2" class="empty__header"></th>
+            </tr>
+            <tr class="row__col">
+              <th scope="col" class="col__no">No</th>
+              <th scope="col">氏名</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td>1</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>2</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>3</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>4</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>5</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>6</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>7</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>8</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>9</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>10</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>11</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+            <tr class="row__table">
+              <td>12</td>
+              <td>10001 大阪　鋼太郎</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">翌月出勤予定</td>
+            </tr>
+            <tr>
+              <td colspan="2">備考</td>
+            </tr>
+          </tfoot>
+        </table>
+        <table class="table table-bordered table__list--workPlan">
+          <thead class="header__table">
+            <tr>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>19</th>
+              <th>20</th>
+              <th>21</th>
+              <th>22</th>
+              <th>23</th>
+              <th>24</th>
+              <th>25</th>
+              <th>26</th>
+              <th>27</th>
+              <th>28</th>
+              <th>29</th>
+              <th>30</th>
+              <th>31</th>
+              <th rowspan="3" class="col__subtotal">小計</th>
+            </tr>
+            <tr>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+              <th>日</th>
+            </tr>
+            <tr>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+              <th>１班</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+            <tr class="row__table">
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>S</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>公</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <span>指</span>
+                <div class="hour">4.25 h</div>
+              </td>
+              <td>
+                <div class="hour">66.25 h</div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td>１班</td>
+              <td rowspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="16" style="text-align: left">5/21 砥石取り替え</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="group-table-holiday">
+        <div class="table__holiday">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>月</th>
+                <th class="field__group">
+                  <span>4</span>
+                  <div>（ 4/1～ ）</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>公休・指定休予定</td>
+                <td class="data__group">
+                  <span>4</span>
+                  <div class="wrap__text">
+                    <span>公2</span>
+                    <span>指2</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>公休・指定休予定</td>
+                <td class="data__group">
+                  <span>96</span>
+                  <div class="wrap__text">
+                    <span>公50</span>
+                    <span>指46</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table__detail-holiday">
+          <table class="table table-bordered">
+            <thead class="header__table">
+              <tr>
+                <th class="field__group bg-blue">
+                  <span>5</span>
+                  <div>（ 4/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>6</span>
+                  <div>（ 5/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>7</span>
+                  <div>（ 6/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>8</span>
+                  <div>（ 7/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>9</span>
+                  <div>（ 8/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>10</span>
+                  <div>（ 9/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>11</span>
+                  <div>（ 10/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>12</span>
+                  <div>（ 11/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>1</span>
+                  <div>（ 12/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>2</span>
+                  <div>（ 1/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>3</span>
+                  <div>（ 2/16～ ）</div>
+                </th>
+                <th class="field__group bg-grey">
+                  <span>4</span>
+                  <div>（ 3/16～ ）</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="data__group bg-blue">
+                  <span>9</span>
+                  <div class="wrap__text">
+                    <span>公5</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>8</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>9</span>
+                  <div class="wrap__text">
+                    <span>公5</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>8</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>9</span>
+                  <div class="wrap__text">
+                    <span>公5</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>9</span>
+                  <div class="wrap__text">
+                    <span>公5</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>8</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>8</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>9</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指5</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>7</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指3</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>8</span>
+                  <div class="wrap__text">
+                    <span>公4</span>
+                    <span>指4</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>8</span>
+                  <div class="wrap__text">
+                    <span>公2</span>
+                    <span>指2</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__group bg-blue">
+                  <span>87</span>
+                  <div class="wrap__text">
+                    <span>公45</span>
+                    <span>指42</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>79</span>
+                  <div class="wrap__text">
+                    <span>公41</span>
+                    <span>指38</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>70</span>
+                  <div class="wrap__text">
+                    <span>公36</span>
+                    <span>指34</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>62</span>
+                  <div class="wrap__text">
+                    <span>公32</span>
+                    <span>指30</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>53</span>
+                  <div class="wrap__text">
+                    <span>公27</span>
+                    <span>指26</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>44</span>
+                  <div class="wrap__text">
+                    <span>公22</span>
+                    <span>指22</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>36</span>
+                  <div class="wrap__text">
+                    <span>公18</span>
+                    <span>指18</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>62</span>
+                  <div class="wrap__text">
+                    <span>公14</span>
+                    <span>指14</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>53</span>
+                  <div class="wrap__text">
+                    <span>公10</span>
+                    <span>指9</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>44</span>
+                  <div class="wrap__text">
+                    <span>公6</span>
+                    <span>指6</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>36</span>
+                  <div class="wrap__text">
+                    <span>公2</span>
+                    <span>指2</span>
+                  </div>
+                </td>
+                <td class="data__group">
+                  <span>36</span>
+                  <div class="wrap__text">
+                    <span>公0</span>
+                    <span>指0</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
