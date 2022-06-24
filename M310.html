@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>社員マスタ 一覧</title>
+    <title>シ リ ー ズ 一 覧</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./resources/css/base.css" />
     <link rel="stylesheet" href="./resources/css/navbar.css" />
     <link rel="stylesheet" href="./resources/css/list.css" />
+    <link rel="stylesheet" href="./resources/css/series.css" />
   </head>
   <body>
     <nav id="navbar">
@@ -39,30 +40,17 @@
         />
         <div id="navbar__text">DREMS</div>
       </div>
-      <div id="navbar__title-text">社 員 一 覧</div>
+      <div id="navbar__title-text">シ リ ー ズ 一 覧</div>
       <div id="navbar__action">
         <a href="#" class="btn btn-add">追加</a>
-        <a href="./top.html" class="btn btn-return">戻る</a>
+        <a href="./1100.html" class="btn btn-return">戻る</a>
       </div>
     </nav>
     <div class="container-fluid">
       <div class="form__select">
         <div>
-          <label class="label__select" for="select__x">組</label>
+          <label class="label__select" for="select__x">使用区分</label>
           <select class="form-select" id="select__x" aria-label="select__x">
-            <option selected>Ａ組</option>
-            <option value="1">Ａ組</option>
-            <option value="2">Ａ組</option>
-            <option value="3">Ａ組</option>
-          </select>
-        </div>
-        <div>
-          <label class="label__select" for="select__area">使用区分</label>
-          <select
-            class="form-select"
-            id="select__area"
-            aria-label="select__area"
-          >
             <option selected>使用中</option>
             <option value="1">使用中</option>
             <option value="2">使用中</option>
@@ -75,28 +63,20 @@
           <thead class="header__table">
             <tr class="col__table">
               <th scope="col">No</th>
-              <th scope="col">社員コード</th>
-              <th scope="col">社員名</th>
-              <th scope="col">所属会社</th>
-              <th scope="col">所属部門</th>
-              <th scope="col">職制</th>
-              <th scope="col">グループ</th>
-              <th scope="col">組</th>
-              <th scope="col">アクセス権限</th>
+              <th scope="col">大分類</th>
+              <th scope="col">中分類</th>
+              <th scope="col">小分類（シリーズ）</th>
+              <th scope="col">係数</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr class="row__table">
               <td class="row__data">1</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">Ｈ形鋼</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">JSP-2　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -105,9 +85,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -118,14 +96,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">2</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">Ｈ形鋼</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">JSP-2　外面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -134,9 +108,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -147,14 +119,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">3</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">KSB-3　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -163,9 +131,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -176,14 +142,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">4</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">一般</td>
+              <td class="row__data">JSP-2W　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -192,9 +154,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -205,14 +165,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">5</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　外面（A）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -221,9 +177,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -234,14 +188,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">6</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -250,9 +200,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -263,14 +211,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">7</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -279,9 +223,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -292,14 +234,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">8</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -308,9 +246,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -321,14 +257,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">9</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -337,9 +269,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -350,14 +280,10 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">10</td>
-              <td class="row__data">1234</td>
-              <td class="row__data">大阪　鋼太郎</td>
-              <td class="row__data">大阪富士工業株式会社</td>
-              <td class="row__data">形鋼工場</td>
-              <td class="row__data">課長</td>
-              <td class="row__data">Ａ組</td>
-              <td class="row__data">事務所</td>
-              <td class="row__data">スーパーユーザー</td>
+              <td class="row__data">鋼矢板</td>
+              <td class="row__data">ワイド</td>
+              <td class="row__data">KSB-3　内面（B）</td>
+              <td class="row__data">0.490</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -366,9 +292,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-staff.html"
-                  class="btn btn__table btn-view"
+                <a href="./M320.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
