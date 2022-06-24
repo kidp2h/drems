@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>作 業 一 覧</title>
+    <title>社員マスタ 一覧</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,17 +39,30 @@
         />
         <div id="navbar__text">DREMS</div>
       </div>
-      <div id="navbar__title-text">作 業 一 覧</div>
+      <div id="navbar__title-text">社 員 一 覧</div>
       <div id="navbar__action">
-        <a href="#" class="btn btn-add">追加</a>
-        <a href="./top.html" class="btn btn-return">戻る</a>
+        <a href="./M130.html" class="btn btn-add">追加</a>
+        <a href="./1100.html" class="btn btn-return">戻る</a>
       </div>
     </nav>
     <div class="container-fluid">
       <div class="form__select">
         <div>
-          <label class="label__select" for="select__x">使用区分</label>
+          <label class="label__select" for="select__x">組</label>
           <select class="form-select" id="select__x" aria-label="select__x">
+            <option selected>Ａ組</option>
+            <option value="1">Ａ組</option>
+            <option value="2">Ａ組</option>
+            <option value="3">Ａ組</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">使用区分</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
             <option selected>使用中</option>
             <option value="1">使用中</option>
             <option value="2">使用中</option>
@@ -62,32 +75,28 @@
           <thead class="header__table">
             <tr class="col__table">
               <th scope="col">No</th>
-              <th scope="col">作業コード</th>
-              <th scope="col">作業件名</th>
-              <th scope="col">区分コード</th>
-              <th scope="col">作業名称</th>
-              <th scope="col">検収単位</th>
-              <th scope="col">契約能率</th>
-              <th scope="col">契約工数(上限)</th>
-              <th scope="col">契約工数(下限)</th>
-              <th scope="col">タスクNo.</th>
-              <th scope="col">シリーズ</th>
+              <th scope="col">社員コード</th>
+              <th scope="col">社員名</th>
+              <th scope="col">所属会社</th>
+              <th scope="col">所属部門</th>
+              <th scope="col">職制</th>
+              <th scope="col">グループ</th>
+              <th scope="col">組</th>
+              <th scope="col">アクセス権限</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr class="row__table">
               <td class="row__data">1</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -96,9 +105,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -109,16 +116,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">2</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">344</td>
-              <td class="row__data">幅切り定例</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.000</td>
-              <td class="row__data">1.400</td>
-              <td class="row__data">0.600</td>
-              <td class="row__data">619906</td>
-              <td class="row__data">その他</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -127,9 +132,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -140,16 +143,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">3</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">346</td>
-              <td class="row__data">JES手入</td>
-              <td class="row__data">時間</td>
-              <td class="row__data">16.000</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619907</td>
-              <td class="row__data">鋼矢板</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -158,9 +159,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -171,16 +170,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">4</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">348</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">時間</td>
-              <td class="row__data">12.148</td>
-              <td class="row__data">1.250</td>
-              <td class="row__data">0.750</td>
-              <td class="row__data">619908</td>
-              <td class="row__data">H形鋼</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -189,9 +186,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -202,16 +197,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">5</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -220,9 +213,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -233,16 +224,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">6</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -251,9 +240,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -264,16 +251,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">7</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -282,9 +267,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -295,16 +278,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">8</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -313,9 +294,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -326,16 +305,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">9</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -344,9 +321,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
@@ -357,16 +332,14 @@
             </tr>
             <tr class="row__table">
               <td class="row__data">10</td>
-              <td class="row__data">2604</td>
-              <td class="row__data">製品手入</td>
-              <td class="row__data">340</td>
-              <td class="row__data">グラインダー手入作業</td>
-              <td class="row__data">本</td>
-              <td class="row__data">1.800</td>
-              <td class="row__data">1.200</td>
-              <td class="row__data">0.800</td>
-              <td class="row__data">619905</td>
-              <td class="row__data">H形鋼、材料</td>
+              <td class="row__data">1234</td>
+              <td class="row__data">大阪　鋼太郎</td>
+              <td class="row__data">大阪富士工業株式会社</td>
+              <td class="row__data">形鋼工場</td>
+              <td class="row__data">課長</td>
+              <td class="row__data">Ａ組</td>
+              <td class="row__data">事務所</td>
+              <td class="row__data">スーパーユーザー</td>
               <td class="row__data row__action">
                 <a href="#" class="btn btn__table btn-delete"
                   ><img
@@ -375,9 +348,7 @@
                     alt=""
                     srcset=""
                 /></a>
-                <a
-                  href="./information-contract.html"
-                  class="btn btn__table btn-view"
+                <a href="./M120.html" class="btn btn__table btn-view"
                   ><img
                     class="icon_btn"
                     src="./resources/images/view.svg"
