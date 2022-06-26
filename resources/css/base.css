@@ -5,6 +5,9 @@
   --bgFieldTable: #eeeeee;
   --grey: #eeeeee;
 }
+* {
+  font-family: "Roboto", sans-serif;
+}
 .container-fluid,
 .container {
   width: 100%;

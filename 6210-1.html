@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>勤 務 計 画 表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/css/base.css" />
+    <link rel="stylesheet" href="./resources/css/navbar.css" />
+    <link rel="stylesheet" href="./resources/css/list.css" />
+    <link
+      rel="stylesheet"
+      href="./resources/css/list-employment-management.css"
+    />
+    <style>
+      .table__list--workPlan table {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="navbar__logo">
+        <img
+          src="./resources/images/logo_navbar.svg"
+          id="navbar__logo-image"
+          alt="logo"
+        />
+        <div id="navbar__text">DREMS</div>
+      </div>
+      <div id="navbar__title-text">勤 務 計 画 表</div>
+      <div id="navbar__action">
+        <a href="#" class="btn btn-add">インポート</a>
+        <a href="./1100.html" class="btn btn-return">戻る</a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="form__select">
+        <div>
+          <label class="label__select" for="select__x">組</label>
+          <select class="form-select" id="select__x" aria-label="select__x">
+            <option selected>Ｂ組</option>
+            <option value="1">Ｂ組</option>
+            <option value="2">Ｂ組</option>
+            <option value="3">Ｂ組</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">グループ</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option selected>商品仕上</option>
+            <option value="1">商品仕上</option>
+            <option value="2">商品仕上</option>
+            <option value="3">商品仕上</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">年</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="2019">2019 年</option>
+            <option value="2020">2020 年</option>
+            <option value="2021">2021 年</option>
+            <option selected value="2022">2022 年</option>
+          </select>
+        </div>
+        <div>
+          <label class="label__select" for="select__area">月</label>
+          <select
+            class="form-select"
+            id="select__area"
+            aria-label="select__area"
+          >
+            <option value="1">1 月</option>
+            <option value="2">2 月</option>
+            <option value="3">3 月</option>
+            <option value="4">4 月</option>
+            <option selected value="5">5 月</option>
+            <option value="6">6 月</option>
+            <option value="7">7 月</option>
+            <option value="8">8 月</option>
+            <option value="9">9 月</option>
+            <option value="10">10 月</option>
+            <option value="11">11 月</option>
+            <option value="12">12 月</option>
+          </select>
+        </div>
+        <div class="group2radio">
+          <label for="" class="label__select"></label>
+          <div class="wrap__checkbox--inline">
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb1"
+                name="radioCB"
+              />
+              <label for="cb1">前半</label>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="cb2"
+                name="radioCB"
+                checked
+              />
+              <label for="cb2">後半</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll__horizontal">
+        <table class="table-scroll-horizontal">
+          <thead>
+            <tr>
+              <th colspan="2"></th>
+              <th>1（日）</th>
+              <th>2（月）</th>
+              <th>3（火）</th>
+              <th>4（水）</th>
+              <th>5（木）</th>
+              <th>6（金）</th>
+              <th>7（土）</th>
+              <th>8（日）</th>
+              <th>9（月）</th>
+              <th>10（火）</th>
+              <th>11（水）</th>
+              <th>12（木）</th>
+              <th>13（金）</th>
+              <th>14（土）</th>
+              <th>15（日）</th>
+              <th>小計</th>
+              <th>合計</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="no">1</td>
+              <td class="staff">
+                <div class="code">10001</div>
+                <div class="name">大阪　鋼太郎</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work blue">平日</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="total">
+                <div class="time__work">52.50h</div>
+                <div class="divider"></div>
+                <div class="detail__work">
+                  <div>残 28.25 h</div>
+                  <div>深 0.00 h</div>
+                </div>
+              </td>
+              <td class="total">
+                <div class="time__work">105.00 h</div>
+                <div class="divider"></div>
+                <div class="detail__work">
+                  <div>残 30.50 h</div>
+                  <div>深 0.00 h</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="no">2</td>
+              <td class="staff">
+                <div class="code">10001</div>
+                <div class="name">大阪　鋼太郎</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work blue">平日</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="cell__work">
+                <div class="header__work-cell">
+                  <span class="tag__work red">指出代無</span>
+                  <span class="shift">7:00 - 15:15</span>
+                </div>
+                <div class="time__work">7.50h</div>
+                <div class="detail__work">
+                  <span>残 4.25 h</span>
+                  <span>深 0.00h</span>
+                </div>
+                <div class="footer__work-cell">びこうびこうびこうび</div>
+              </td>
+              <td class="total">
+                <div class="time__work">52.50h</div>
+                <div class="divider"></div>
+                <div class="detail__work">
+                  <div>残 28.25 h</div>
+                  <div>深 0.00 h</div>
+                </div>
+              </td>
+              <td class="total">
+                <div class="time__work">105.00 h</div>
+                <div class="divider"></div>
+                <div class="detail__work">
+                  <div>残 30.50 h</div>
+                  <div>深 0.00 h</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
