@@ -147,3 +147,9 @@ tr.data-align-left {
 .row__table.all-align-left td {
   text-align: left;
 }
+.group2radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
