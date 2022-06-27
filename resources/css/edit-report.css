@@ -175,15 +175,24 @@ input.disabled {
     zoom: 0.5;
   }
   * {
-    font-size: x-large !important;
+    font-size: large !important;
   }
   .row__table .row__data:first-child {
-    font-size: 28px !important;
+    font-size: medium !important;
   }
   #navbar {
-    zoom: 0.6
+    zoom: 0.6;
   }
   .table__divided #table__data:nth-child(2) {
-    margin-right: 10px !important;
+    margin-right: 5px !important;
+  }
+  .row__table .row__data:first-child {
+    font-size: large !important;
+  }
+  select {
+    font-size: large !important;
+  }
+  th {
+    font-size: large !important;
   }
 }
