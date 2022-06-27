@@ -169,3 +169,13 @@ input.disabled {
 #table__data.table-field-vertical.not-rounded-right {
   border-radius: 6px 0px 0px 0px;
 }
+
+@media screen and (max-width: 1080px) {
+  .table,
+  #navbar {
+    zoom: 0.6;
+  }
+  * {
+    font-size: medium !important;
+  }
+}
