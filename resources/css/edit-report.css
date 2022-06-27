@@ -172,9 +172,18 @@ input.disabled {
 
 @media screen and (max-width: 1080px) {
   .table{
-    zoom: 0.6;
+    zoom: 0.5;
   }
   * {
-    font-size: large !important;
+    font-size: x-large !important;
+  }
+  .row__table .row__data:first-child {
+    font-size: 28px !important;
+  }
+  #navbar {
+    zoom: 0.6
+  }
+  .table__divided #table__data:nth-child(2) {
+    margin-right: 10px !important;
   }
 }
