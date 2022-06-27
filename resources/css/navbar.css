@@ -80,3 +80,8 @@
 .btn:not(:hover) {
   border: none;
 }
+@media screen and (max-width: 1080px) {
+  #navbar {
+    zoom: 0.6
+  }
+} 

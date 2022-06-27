@@ -160,3 +160,25 @@ footer {
   width: 100%;
   background-color: var(--primary);
 }
+
+@media screen and (max-width: 1080px) {
+  #navbar {
+    zoom: 0.7
+  }
+  .list__card {
+    justify-content: center;
+    
+  }
+  .card-page {
+    zoom: 0.6
+  }
+  * {
+    font-size: x-large !important;
+  }
+  .title__card span a {
+    font-size: large !important;
+  }
+  .title__card span {
+    font-size: large !important;
+  }
+}
