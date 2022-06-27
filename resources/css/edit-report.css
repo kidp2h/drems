@@ -175,4 +175,7 @@ input.disabled {
   #navbar {
     zoom: 0.6;
   }
+  * {
+    font-size: medium !important;
+  }
 }
