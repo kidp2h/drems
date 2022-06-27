@@ -110,3 +110,26 @@ footer span {
   position: absolute;
   color: white;
 }
+@media screen and (max-width: 1080px) {
+  /* html{
+    zoom: 0.6;
+  } */
+  body {
+    zoom: 0.5;
+    height: 1622px;
+  }
+  * {
+    font-size: xx-large !important;
+  }
+  #nameBrand {
+    font-size: 56px !important;
+    color: #0075c1;
+  }
+  #nameSystem {
+    font-size: 35px !important;
+    color: #0075c1;
+  }
+  footer {
+    height: 300px;
+  }
+}
