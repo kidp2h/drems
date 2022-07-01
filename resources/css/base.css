@@ -248,20 +248,18 @@ input.disabled[type="number"] {
 .wrap__checkbox--inline label:first-child {
   margin-right: 20px;
 }
-
-/* .
-
-.inputSelect {
-  border: 1px solid black;
+.container-fluid,
+.container {
+  width: 100%;
   display: flex;
-  align-items: center;
-  padding: 0px 70px;
-  height: 50px;
-}
-.group-input-range input {
-  width: 200px;
-  height: 50px;
-  text-align: center;
+  flex-direction: column;
+  padding: 36px;
+  padding-top: calc(80px + 15px);
 }
 
- */
+@media screen and (max-width: 1080px) {
+  .container-fluid,
+  .container {
+    zoom: 0.6;
+  }
+}
