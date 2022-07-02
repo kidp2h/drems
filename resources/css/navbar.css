@@ -96,4 +96,14 @@
   #navbar__profile .dropdown {
     height: 240px;
   }
+  #navbar__action .btn {
+    font-size: large !important;
+  }
+  #navbar__action .btn {
+    font-size: medium !important;
+  }
+
+  #navbar__action .btn.btn-exclamation-triangle {
+    font-size: small !important;
+  }
 }

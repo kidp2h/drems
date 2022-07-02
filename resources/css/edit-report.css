@@ -169,25 +169,43 @@ input.disabled {
 #table__data.table-field-vertical.not-rounded-right {
   border-radius: 6px 0px 0px 0px;
 }
-
+.row__textarea {
+  padding: 10px 3px !important;
+  padding-left: 15px !important;
+}
 @media screen and (max-width: 1080px) {
-  * {
-    font-size: large !important;
-  }
-  .row__table .row__data:first-child {
+  .table * {
     font-size: medium !important;
   }
-
+  /* body {
+    zoom: 0.7;
+  } */
+  .table select {
+    font-size: medium !important;
+  }
+  /* .table-input {
+    zoom: 0.95;
+  } */
   .table__divided #table__data:nth-child(2) {
     margin-right: 5px !important;
+    /* padding-left: 50px; */
   }
-  .row__table .row__data:first-child {
-    font-size: large !important;
+  .inputShort {
+    width: 127.5px !important;
   }
-  select {
-    font-size: large !important;
+  .group-select .selectMLong {
+    width: 290px !important;
   }
-  th {
-    font-size: large !important;
+  .group-select .selectLong {
+    width: 300px !important;
+  }
+  .groupInputRange {
+    width: 300px !important;
+  }
+  .inputMedium {
+    width: 200px !important;
+  }
+  .table__textarea {
+    height: fit-content !important;
   }
 }

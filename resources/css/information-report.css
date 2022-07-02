@@ -81,7 +81,7 @@ th {
 }
 .table-information-vertical .row__footer {
   background-color: var(--bgFieldTable);
-  height: 70px;
+  height: 50px;
 }
 .table-information-vertical .row__footer td {
   background-color: var(--bgFieldTable);
@@ -98,4 +98,19 @@ table:last-child {
 .table-information-vertical .data-vertical-top {
   vertical-align: top !important;
   padding-top: 15px !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .table-information-vertical .row__data:last-child {
+    width: fit-content;
+  }
+  .row__action a {
+    zoom: 0.8;
+  }
+  .table-information-vertical .row__footer td:first-child {
+    font-size: large !important;
+  }
+  .row__field--status {
+    font-size: 10px !important;
+  }
 }
