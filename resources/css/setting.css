@@ -1,6 +1,7 @@
 .table-field-horizontal .row__field {
   width: 350px;
 }
+
 .table-field-horizontal .row__field--status {
   width: 400px;
   padding-left: 20px !important;
@@ -59,9 +60,9 @@
 .table-field-horizontal .table-row.hasImage td {
   height: 100%;
 }
-.flatpickr-input {
+/* .flatpickr-input {
   font-size: 10px !important;
-}
+} */
 input.numInput.flatpickr-hour {
   font-size: 24px;
 }
@@ -71,6 +72,58 @@ input.numInput.flatpickr-minute {
 .flatpickr-time-separator {
   font-size: 32px;
 }
+.nameTable {
+  font-size: medium;
+}
+.container-fluid,
 .container {
+  padding-top: calc(80px + 30px);
   align-items: flex-start;
+  justify-content: center;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+.table-field-horizontal.table.table-bordered {
+  width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .table-field-horizontal .table-row td:nth-child(odd) {
+    width: 350px !important;
+  }
+  .table-field-horizontal .row__field--data {
+    width: 650px !important;
+  }
+  .field-radioImage {
+    /* background-color: black !important; */
+    width: 100% !important;
+  }
+  .field-radioImage img {
+    zoom: 0.55;
+  }
+  .wrapInputHasIcon {
+    width: 350px !important;
+  }
+  .wrapInputHasIcon input {
+    width: 350px !important;
+  }
+
+  .table-field-horizontal .hasTimePicker .field__input {
+    width: 350px;
+    font-size: medium !important;
+    background-color: white;
+  }
+  .table-field-horizontal .hasTimePicker {
+    width: 5;
+  }
+  .wrapRadio.radioHasImage {
+    margin: 0;
+  }
+  .wrapImageRadio {
+    height: 100px !important;
+    min-height: 100px !important;
+  }
+  /* .table-field-horizontal .table-row td {
+    height: fit-content !important;
+  } */
 }
