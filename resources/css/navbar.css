@@ -82,6 +82,28 @@
 }
 @media screen and (max-width: 1080px) {
   #navbar {
-    zoom: 0.6
+    zoom: 0.7;
   }
-} 
+  #navbar__text {
+    font-size: 30px !important;
+  }
+  #navbar__title-text {
+    font-size: 17px !important;
+  }
+  #navbar__profile * {
+    font-size: 17px !important;
+  }
+  #navbar__profile .dropdown {
+    height: 240px;
+  }
+  #navbar__action .btn {
+    font-size: large !important;
+  }
+  #navbar__action .btn {
+    font-size: medium !important;
+  }
+
+  #navbar__action .btn.btn-exclamation-triangle {
+    font-size: small !important;
+  }
+}

@@ -116,3 +116,33 @@
 .table-row td:last-child {
   font-size: 20px !important;
 }
+
+@media screen and (max-width: 1080px) {
+  .container-fluid {
+    padding-top: 120px;
+    height: 100%;
+  }
+  .table {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
+  .table-row td:last-child {
+    font-size: medium !important;
+  }
+  .wrapInputHasIcon {
+    width: 100%;
+  }
+  .wrapInputHasIcon input {
+    width: 600px !important;
+    font-size: medium !important;
+    background-color: white;
+  }
+  .table-field-horizontal .row__field--data {
+    width: 600px;
+    padding-left: 17px !important;
+    font-size: 20px;
+  }
+  .table-field-horizontal .table-row td {
+    height: 60px;
+  }
+}

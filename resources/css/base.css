@@ -185,7 +185,7 @@ input.disabled[type="number"] {
   color: black !important;
   height: 50px !important;
   width: 450px !important;
-  font-size: 18px !important;
+  font-size: 18px;
   padding-left: 15px;
   text-align: left;
   display: flex;
@@ -248,20 +248,58 @@ input.disabled[type="number"] {
 .wrap__checkbox--inline label:first-child {
   margin-right: 20px;
 }
-
-/* .
-
-.inputSelect {
-  border: 1px solid black;
+.container-fluid,
+.container {
+  width: 100%;
   display: flex;
-  align-items: center;
-  padding: 0px 70px;
-  height: 50px;
-}
-.group-input-range input {
-  width: 200px;
-  height: 50px;
-  text-align: center;
+  flex-direction: column;
+  padding: 36px;
+  padding-top: calc(80px + 15px);
 }
 
- */
+@media screen and (max-width: 1080px) {
+  .container-fluid,
+  .container {
+    zoom: 0.6;
+  }
+  .table * {
+    font-size: 16px !important;
+  }
+  .form-select {
+    font-size: 12px !important;
+  }
+  .form__select {
+    margin-top: 20px;
+  }
+  .table th[scope="col"] {
+    font-size: small !important;
+  }
+  .table .row__data {
+    font-size: medium;
+  }
+  .label__select {
+    font-size: 15px !important;
+  }
+  .page-item * {
+    font-size: medium !important;
+  }
+  .wrapRadio label.form-check-label {
+    min-width: 120px;
+  }
+  /* .inputWithIcon input {
+    font-size: 50px !important;
+  } */
+  input[type="password"] {
+    font-size: 15px !important;
+  }
+  .wrapInputHasIcon input {
+    font-size: medium !important;
+  }
+  .inputIcon {
+    font-size: small !important;
+    width: 270px !important;
+    color: black;
+    background-color: white;
+    /* padding-right: 100px; */
+  }
+}

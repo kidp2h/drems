@@ -59,7 +59,7 @@
   margin-bottom: 20px;
 }
 ul.dropdown.dropdown__profile::before {
-  content: ".";
+  content: "";
   width: 30px;
   height: 50px;
   position: absolute;
@@ -77,7 +77,6 @@ ul.dropdown.dropdown__profile::after {
   position: absolute;
   top: -55px;
   background-color: transparent;
-  /* width: 100px; */
   left: 0;
 }
 #navbar__profile:hover > .dropdown {
@@ -119,6 +118,9 @@ ul.dropdown.dropdown__profile::after {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
 }
 .card-page span {
   color: white;
@@ -162,23 +164,29 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
-  #navbar {
-    zoom: 0.7
+  .container,
+  .container-fluid {
+    zoom: 1;
+    padding-top: 65px;
   }
   .list__card {
     justify-content: center;
-    
+    padding: 0px 0px;
   }
   .card-page {
-    zoom: 0.6
+    zoom: 0.8;
   }
-  * {
-    font-size: x-large !important;
-  }
-  .title__card span a {
+  .title__card * {
     font-size: large !important;
   }
-  .title__card span {
+  .footer__card * {
+    font-size: large !important;
+  }
+
+  footer {
+    height: 200px;
+  }
+  ol.main {
     font-size: large !important;
   }
 }

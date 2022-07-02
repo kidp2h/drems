@@ -59,6 +59,9 @@
 .table-field-horizontal .table-row.hasImage td {
   height: 100%;
 }
+.flatpickr-input {
+  font-size: 10px !important;
+}
 input.numInput.flatpickr-hour {
   font-size: 24px;
 }
