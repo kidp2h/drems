@@ -6,7 +6,7 @@
   box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
 }
 .table-field-horizontal .table-row td {
-  height: 80px;
+  height: 54px;
   vertical-align: middle;
   border: 1px solid;
 }
@@ -110,7 +110,7 @@
 }
 .container-fluid,
 .container {
-  padding-top: calc(80px + 70px);
+  padding-top: calc(80px + 20px);
   align-items: center;
 }
 .table-row td:last-child {
@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 1080px) {
   .container-fluid {
-    padding-top: 120px;
+    padding-top: 110px;
     height: 100%;
   }
   .table {
@@ -143,6 +143,9 @@
     font-size: 20px;
   }
   .table-field-horizontal .table-row td {
-    height: 60px;
+    height: 65px;
+  }
+  .table-field-horizontal .table-row td {
+    font-size: medium !important;
   }
 }

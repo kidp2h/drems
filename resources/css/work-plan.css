@@ -6,7 +6,10 @@
 }
 .group-table .table__list--staff {
   flex: 1;
-  margin-right: 15px;
+  /* margin-right: 15px; */
+}
+.table__list--workPlan table tbody thead {
+  border-left: none !important;
 }
 .group-table .table__list--workPlan {
   flex: 4;
@@ -40,13 +43,39 @@ th {
 .table__list--workPlan .header__table tr {
   height: 43px;
 }
-thead,
-tbody,
-tfoot {
+.table__list--staff thead,
+.table__list--staff tbody,
+.table__list--staff tfoot {
   border: 1px solid;
 }
+
+.table__list--workPlan .header__table,
+.table__list--workPlan .row__table,
+.table__list--workPlan tfoot {
+  border: 1px solid;
+  border-left: 0px solid transparent;
+}
+.table__list--workPlan td[rowspan="2"] {
+  border-left: 1px solid;
+}
+.table__holiday thead,
+.table__holiday tbody,
+.table__holiday tfoot {
+  border: 1px solid;
+}
+
+.table__detail-holiday thead,
+.table__detail-holiday tbody,
+.table__detail-holiday tfoot {
+  border: 1px solid;
+  border-left: 0px solid transparent;
+}
+
 .row__col {
   height: 43px;
+}
+th.col__subtotal {
+  border-left: 1px solid;
 }
 tr {
   color: black;
@@ -96,7 +125,7 @@ td div.hour {
   height: 67px;
 }
 .table__holiday {
-  margin-right: 15px;
+  /* margin-right: 15px; */
   flex: 1;
 }
 .table__holiday tbody td {

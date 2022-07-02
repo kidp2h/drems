@@ -184,7 +184,7 @@ input.disabled[type="number"] {
   background-color: #ffdddd;
   color: black !important;
   height: 50px !important;
-  width: 450px !important;
+  width: 500px !important;
   font-size: 18px;
   padding-left: 15px;
   text-align: left;
@@ -256,7 +256,9 @@ input.disabled[type="number"] {
   padding: 36px;
   padding-top: calc(80px + 15px);
 }
-
+.pagination {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 1080px) {
   .container-fluid,
   .container {
@@ -301,5 +303,8 @@ input.disabled[type="number"] {
     color: black;
     background-color: white;
     /* padding-right: 100px; */
+  }
+  .nameTable {
+    font-size: medium !important;
   }
 }
