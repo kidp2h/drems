@@ -121,12 +121,15 @@ input.disabled {
   padding: 0;
   padding-left: 15px;
 }
-.table__divided {
-  display: flex;
-}
+
 .table__divided #table__data:first-child {
-  /* margin-right: 30px; */
-  flex: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.table__divided {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .table__divided #table__data:nth-child(2) {
   margin-right: 30px;
@@ -191,21 +194,46 @@ input.disabled {
     /* padding-left: 50px; */
   }
   .inputShort {
-    width: 127.5px !important;
+    width: 162.5px !important;
   }
   .group-select .selectMLong {
     width: 290px !important;
   }
   .group-select .selectLong {
-    width: 300px !important;
+    width: 370px !important;
   }
   .groupInputRange {
-    width: 300px !important;
+    width: 370px !important;
   }
   .inputMedium {
-    width: 200px !important;
+    width: 150px !important;
   }
   .table__textarea {
     height: fit-content !important;
+  }
+  .special {
+    width: 230px !important;
+  }
+  .row__data {
+    height: 60px !important;
+  }
+  .inputText {
+    height: 60px !important;
+  }
+  .group-select select {
+    height: 60px !important;
+    /* font-size: xx-small !important; */
+    text-align: center;
+    text-align-last: center;
+    direction: ltr;
+  }
+  .table-field-vertical .btn__table {
+    height: 60px !important;
+  }
+  .table__divided .inputShort {
+    width: 125px !important;
+  }
+  .table__divided .selectMLong {
+    width: 370px !important;
   }
 }
