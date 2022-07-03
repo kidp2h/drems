@@ -99,7 +99,7 @@ footer {
   height: 600px;
   background-color: #0075c1;
   z-index: 999999;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   color: white;
   font-size: 32px;
@@ -113,6 +113,7 @@ footer span {
 @media screen and (max-width: 1080px) {
   html {
     height: 100vh;
+    /* overflow: hidden; */
   }
   body {
     zoom: 0.5;
@@ -131,6 +132,25 @@ footer span {
     color: #0075c1;
   }
   footer {
-    height: 500px;
+    height: 27vh !important;
+  }
+  .bg__image {
+    height: 100%;
+    top: 0;
+    left: 0 !important;
+    object-fit: cover;
+  }
+  .background__image {
+    height: 73vh;
+    width: 100vw;
+  }
+  #formLogin {
+    position: fixed;
+  }
+  .background__image .bg__image {
+    position: fixed;
+  }
+  .wrap {
+    position: fixed;
   }
 }

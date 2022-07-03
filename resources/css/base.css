@@ -307,4 +307,8 @@ input.disabled[type="number"] {
   .nameTable {
     font-size: medium !important;
   }
+  :root {
+    touch-action: pan-x pan-y;
+    height: 100%;
+  }
 }

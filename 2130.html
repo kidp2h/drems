@@ -467,7 +467,8 @@
                 <th scope="col">処理量</th>
                 <th scope="col">検収量</th>
                 <th scope="col"></th>
-                <!-- <th scope="col">備考</th> -->
+                <th scope="col">備考</th>
+                <th scope="col" class="header-divided">kec</th>
               </tr>
             </thead>
             <tbody>
@@ -507,9 +508,17 @@
                       srcset=""
                   /></a>
                 </td>
-                <!-- <td rowspan="4" class="row__data row__textarea">
-                  <textarea name="" id="" cols="25" rows="10"></textarea>
-                </td> -->
+                <td rowspan="4" class="hasTextarea">
+                  <textarea name="" id="" cols="25"></textarea>
+                </td>
+                <td rowspan="4" class="hasTextarea">
+                  <textarea name="" id="">
+作業時トラブルあり
+日時：2022/01/05 08:55
+場所：●●
+詳細：xxx
+                  </textarea>
+                </td>
               </tr>
               <tr class="row__table">
                 <td class="row__data">②</td>
@@ -615,31 +624,11 @@
                   />
                 </td>
                 <td class="row__data row__action"></td>
-                <!-- <td></td> -->
               </tr>
             </tbody>
           </table>
         </div>
-        <div id="table__data" class="table-field-vertical not-rounded-left">
-          <table class="table table-borderless table__textarea">
-            <thead class="header__table">
-              <tr class="col__table">
-                <th scope="col">備考</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="row__table">
-                <td
-                  class="row__data row__textarea"
-                  style="padding: 10px 3px; padding-left: 15px"
-                >
-                  <textarea name="" id="" cols="25" rows="10"></textarea>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div id="table__data" class="table-field-vertical">
+        <!-- <div id="table__data" class="table-field-vertical table2">
           <table class="table table-borderless">
             <thead class="header__table">
               <tr class="col__table">
@@ -648,19 +637,11 @@
             </thead>
             <tbody>
               <tr class="row__table">
-                <td class="row__data row__textarea" style="padding: 10px 3px">
-                  <textarea name="" id="" cols="25" rows="10">
-作業時トラブルあり
-日時：2022/01/05 08:55
-場所：●●
-詳細：xxx
-
-                  </textarea>
-                </td>
+                <td class="row__data row__textarea"></td>
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
