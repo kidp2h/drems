@@ -12,10 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -65,10 +62,9 @@
             >
               <div class="wrapInputHasIcon">
                 <input
-                  type="text"
+                  type="date"
                   data-input
                   class="field__input"
-                  data-target="#datetimepicker1"
                   style="background: white"
                 />
                 <img
@@ -87,7 +83,7 @@
             <td class="row__field">掲載開始時刻</td>
             <td class="row__field--data hasInput hasTimePicker">
               <input
-                type="text"
+                type="time"
                 class="field__input flatpickr-input"
                 id="timepicker1"
               />
@@ -102,7 +98,7 @@
             >
               <div class="wrapInputHasIcon">
                 <input
-                  type="text"
+                  type="date"
                   data-input
                   class="field__input"
                   data-target="#datetimepicker1"
@@ -124,7 +120,7 @@
             <td class="row__field">掲載終了時刻</td>
             <td class="row__field--data hasInput hasTimePicker">
               <input
-                type="text"
+                type="time"
                 class="field__input flatpickr flatpickr-input"
                 id="timepicker2"
               />
@@ -269,8 +265,5 @@
         </tbody>
       </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
-    <script src="./resources/js/main.js"></script>
   </body>
 </html>
