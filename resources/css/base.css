@@ -21,18 +21,10 @@ select.form-select {
 }
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  /* width: px; */
-  position: absolute;
-  /* right: 8px; */
-  right: 0;
-  zoom: 1.5;
-  width: 95%;
-  background-color: red;
-  z-index: 99999999;
+  opacity: 1;
 }
 input[type="date"] ~ img {
-  /* display: none !important; */
+  display: none !important;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
   /* background: url("../images/icon_datepicker.svg");
