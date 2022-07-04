@@ -99,7 +99,7 @@ footer {
   height: 600px;
   background-color: #0075c1;
   z-index: 999999;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   color: white;
   font-size: 32px;
@@ -133,6 +133,7 @@ footer span {
   }
   footer {
     height: 27vh !important;
+    position: fixed;
   }
   .bg__image {
     height: 100%;
