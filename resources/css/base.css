@@ -21,8 +21,23 @@ select.form-select {
 }
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
+  opacity: 0;
+  /* width: px; */
+  position: absolute;
+  /* right: 8px; */
+  right: 0;
+  zoom: 1.5;
+  width: 95%;
+  background-color: red;
+  z-index: 99999999;
+}
+input[type="date"] ~ img {
+  /* display: none !important; */
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* background: url("../images/icon_datepicker.svg");
+  display: flex;
+  justify-content: center; */
 }
 a {
   text-decoration: none;

@@ -1,5 +1,6 @@
 .form-select,
-.form__select input[type="text"] {
+.form__select input[type="text"],
+.form__select input[type="date"] {
   height: 49px;
   width: 185px;
   border: 1px solid;
@@ -8,7 +9,8 @@
   text-align: center;
   color: black;
 }
-.form__select input[type="text"] {
+.form__select input[type="text"],
+.form__select input[type="date"] {
   width: 200px;
   text-align: left;
   padding-left: 20px;
@@ -37,7 +39,7 @@
   margin-left: 0px;
 }
 
-#table__data.table-field-vertical {
+.table__data.table-field-vertical {
   margin-top: 10px;
   border-radius: 6px 6px 0px 0px;
   overflow: hidden;
@@ -165,10 +167,7 @@ tr.data-align-left {
     height: 50px;
     padding-right: 200px !important;
   }
-  /* .select-special {
-    width: 320px !important;
-  } */
-  #table__data.table-field-vertical {
+  .table__data.table-field-vertical {
     margin-top: 10px;
   }
   .pagination {
