@@ -22,14 +22,11 @@ select.form-select {
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1;
+  /* background-color: red; */
 }
-input[type="date"] ~ img {
+input[type="date"] ~ img,
+input[type="time"] ~ img {
   display: none !important;
-}
-input[type="date"]::-webkit-calendar-picker-indicator {
-  /* background: url("../images/icon_datepicker.svg");
-  display: flex;
-  justify-content: center; */
 }
 a {
   text-decoration: none;
@@ -159,6 +156,13 @@ input[type="number"] {
 input.disabled[type="number"] {
   text-align: right;
   padding-right: 10px;
+}
+
+input[type="date"],
+input[type="time"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .input__information {
@@ -317,5 +321,11 @@ input.disabled[type="number"] {
   :root {
     touch-action: pan-x pan-y;
     height: 100%;
+  }
+  input[type="date"] ~ img,
+  input[type="time"] ~ img {
+    display: block !important;
+    zoom: 2;
+    /* background-color: ; */
   }
 }
